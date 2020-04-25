@@ -1,0 +1,353 @@
+\hypertarget{classVD}{}\section{Referencia de la plantilla de la Clase VD$<$ T $>$}
+\label{classVD}\index{V\+D$<$ T $>$@{V\+D$<$ T $>$}}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVD_a85d6e04a09adabaefe28fc440f4d9102}{VD} ()
+\begin{DoxyCompactList}\small\item\em Constructor de un objeto \hyperlink{classVD}{VD}. \end{DoxyCompactList}\item 
+\hyperlink{classVD_ae0b07f71bdbb515e4cb3cb397a8b2f8c}{VD} (int num\+\_\+elementos)
+\begin{DoxyCompactList}\small\item\em Constructor de un objeto \hyperlink{classVD}{VD} con un numero de elementos determinado. \end{DoxyCompactList}\item 
+\hyperlink{classVD_ad1b6a98793128fe8fa7adca6e5fddb0f}{VD} (const \hyperlink{classVD}{VD} \&original)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\hyperlink{classVD_a0533f99aa2fee31fde63edd6c4b8bb2d}{$\sim$\+VD} ()
+\begin{DoxyCompactList}\small\item\em Destructor del objeto \hyperlink{classVD}{VD}. \end{DoxyCompactList}\item 
+\hyperlink{classVD}{VD} \& \hyperlink{classVD_ad97cd77c2bad24bba0884bacc050f7e5}{operator=} (const \hyperlink{classVD}{VD} \&original)
+\begin{DoxyCompactList}\small\item\em Operador de asignación del objeto \hyperlink{classVD}{VD}. \end{DoxyCompactList}\item 
+int \hyperlink{classVD_a411ad026db1c8e0617d9031f1f1017a5}{size} () const
+\begin{DoxyCompactList}\small\item\em Metodo get del objeto \hyperlink{classVD}{VD} para conseguir el tamaño del array dinamico. \end{DoxyCompactList}\item 
+T \& \hyperlink{classVD_a7d80240b5791d62b7e27657763afe712}{operator\mbox{[}$\,$\mbox{]}} (int i)
+\begin{DoxyCompactList}\small\item\em Metodo subíndice del objeto \hyperlink{classVD}{VD} utilizado para acceder al dato correspondiente a una posición del array dinámico. \end{DoxyCompactList}\item 
+const T \& \hyperlink{classVD_a16ae24a4b545a02baf6733ba5c066346}{operator\mbox{[}$\,$\mbox{]}} (int i) const
+\begin{DoxyCompactList}\small\item\em Metodo subíndice del objeto \hyperlink{classVD}{VD} utilizado para acceder al dato correspondiente a una posición del array dinámico. \end{DoxyCompactList}\item 
+void \hyperlink{classVD_ac6aea049465bd63188c8e66df39c6dd5}{set} (int i)
+\begin{DoxyCompactList}\small\item\em Metodo set del objeto \hyperlink{classVD}{VD}. \end{DoxyCompactList}\item 
+void \hyperlink{classVD_a473e1573994209fa70e955bc73b0e8c4}{resize} (int new\+\_\+nelementos)
+\begin{DoxyCompactList}\small\item\em Metodo que cambia la memoria reservada del array dinamico datos por uno determinado. \end{DoxyCompactList}\item 
+void \hyperlink{classVD_a4a3d631ec9c48db64746377745141fef}{aniadir\+Elemento} (T aux)
+\begin{DoxyCompactList}\small\item\em Metodo del objeto \hyperlink{classVD}{VD} que añade un elemento al final del array dinamico. \end{DoxyCompactList}\item 
+void \hyperlink{classVD_a771eef0cc3fc7671dce4666dd17474a6}{modificar\+Elemento} (int pos, T x)
+\begin{DoxyCompactList}\small\item\em Metodo del objeto \hyperlink{classVD}{VD} para modificar un elemento. \end{DoxyCompactList}\item 
+void \hyperlink{classVD_a1ada7fe4356a885e7b90e396bbd6af24}{borrar\+Elemento} (int pos)
+\begin{DoxyCompactList}\small\item\em Metodo del objeto \hyperlink{classVD}{VD} para borrar un elemento. \end{DoxyCompactList}\item 
+float \hyperlink{classVD_aa480a2e4480402b23d9ae83fd1cf661e}{obtener\+Media} ()
+\begin{DoxyCompactList}\small\item\em Metodo del template \hyperlink{classVD}{VD} utilizado para obtener la media. \end{DoxyCompactList}\item 
+float \hyperlink{classVD_a9aa1d47f997319e54e1429363e830ef7}{obtener\+Varianza} ()
+\begin{DoxyCompactList}\small\item\em Metodo del template \hyperlink{classVD}{VD} utilizado para obtener la varianza. \end{DoxyCompactList}\item 
+float \hyperlink{classVD_a65a0f383bce59447393168d183c8a945}{obtener\+Desviacion} (float varianza)
+\begin{DoxyCompactList}\small\item\em Metodo del template \hyperlink{classVD}{VD} utilizado para obtener la desviación típica. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classVD_affc5ceba10ca993ec60d3398857e24d0}\label{classVD_affc5ceba10ca993ec60d3398857e24d0}} 
+T $\ast$ {\bfseries datos}
+\item 
+\mbox{\Hypertarget{classVD_a81b9cf437bfdf7c1db4fb273dff32e4a}\label{classVD_a81b9cf437bfdf7c1db4fb273dff32e4a}} 
+int {\bfseries nelementos}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classVD_a85d6e04a09adabaefe28fc440f4d9102}\label{classVD_a85d6e04a09adabaefe28fc440f4d9102}} 
+\index{VD@{VD}!VD@{VD}}
+\index{VD@{VD}!VD@{VD}}
+\subsubsection{\texorpdfstring{V\+D()}{VD()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classVD}{VD}$<$ T $>$\+::\hyperlink{classVD}{VD} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de un objeto \hyperlink{classVD}{VD}. 
+
+\begin{DoxyReturn}{Devuelve}
+Se pone a nulo el array dinámico y el numero de elementos a cero 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVD_ae0b07f71bdbb515e4cb3cb397a8b2f8c}\label{classVD_ae0b07f71bdbb515e4cb3cb397a8b2f8c}} 
+\index{VD@{VD}!VD@{VD}}
+\index{VD@{VD}!VD@{VD}}
+\subsubsection{\texorpdfstring{V\+D()}{VD()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classVD}{VD}$<$ T $>$\+::\hyperlink{classVD}{VD} (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+elementos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de un objeto \hyperlink{classVD}{VD} con un numero de elementos determinado. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em num\+\_\+elementos} & numero de elementos que se va a asignar \hyperlink{classVD}{VD} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Se reserva la cantidad de memoria indicada por num\+\_\+elementos del array dinámico y a nelementos se le asigna num\+\_\+elementos 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+num\+\_\+elemetos debe ser mayor o igual a cero 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classVD_ad1b6a98793128fe8fa7adca6e5fddb0f}\label{classVD_ad1b6a98793128fe8fa7adca6e5fddb0f}} 
+\index{VD@{VD}!VD@{VD}}
+\index{VD@{VD}!VD@{VD}}
+\subsubsection{\texorpdfstring{V\+D()}{VD()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classVD}{VD}$<$ T $>$\+::\hyperlink{classVD}{VD} (\begin{DoxyParamCaption}\item[{const \hyperlink{classVD}{VD}$<$ T $>$ \&}]{original }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em original} & es un objeto de la clase \hyperlink{classVD}{VD} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Se crea un objeto \hyperlink{classVD}{VD} asignandole los mismos atributos que otro objeto ya existente de la misma clase 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+nelementos debe de ser mayor a cero 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classVD_a0533f99aa2fee31fde63edd6c4b8bb2d}\label{classVD_a0533f99aa2fee31fde63edd6c4b8bb2d}} 
+\index{VD@{VD}!````~VD@{$\sim$\+VD}}
+\index{````~VD@{$\sim$\+VD}!VD@{VD}}
+\subsubsection{\texorpdfstring{$\sim$\+V\+D()}{~VD()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classVD}{VD}$<$ T $>$\+::$\sim$\hyperlink{classVD}{VD} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructor del objeto \hyperlink{classVD}{VD}. 
+
+\begin{DoxyPrecond}{Precondición}
+nelementos debe de ser mayor a cero 
+\end{DoxyPrecond}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classVD_a4a3d631ec9c48db64746377745141fef}\label{classVD_a4a3d631ec9c48db64746377745141fef}} 
+\index{VD@{VD}!aniadir\+Elemento@{aniadir\+Elemento}}
+\index{aniadir\+Elemento@{aniadir\+Elemento}!VD@{VD}}
+\subsubsection{\texorpdfstring{aniadir\+Elemento()}{aniadirElemento()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classVD}{VD}$<$ T $>$\+::aniadir\+Elemento (\begin{DoxyParamCaption}\item[{T}]{aux }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metodo del objeto \hyperlink{classVD}{VD} que añade un elemento al final del array dinamico. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em aux} & variable de la clase T \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Se añade al final del array dinamico datos el objeto T aux 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVD_a1ada7fe4356a885e7b90e396bbd6af24}\label{classVD_a1ada7fe4356a885e7b90e396bbd6af24}} 
+\index{VD@{VD}!borrar\+Elemento@{borrar\+Elemento}}
+\index{borrar\+Elemento@{borrar\+Elemento}!VD@{VD}}
+\subsubsection{\texorpdfstring{borrar\+Elemento()}{borrarElemento()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classVD}{VD}$<$ T $>$\+::borrar\+Elemento (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metodo del objeto \hyperlink{classVD}{VD} para borrar un elemento. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pos} & entero que indica una posicion \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Se elimina un elemento del array dinamico datos de la posicion pos 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVD_a771eef0cc3fc7671dce4666dd17474a6}\label{classVD_a771eef0cc3fc7671dce4666dd17474a6}} 
+\index{VD@{VD}!modificar\+Elemento@{modificar\+Elemento}}
+\index{modificar\+Elemento@{modificar\+Elemento}!VD@{VD}}
+\subsubsection{\texorpdfstring{modificar\+Elemento()}{modificarElemento()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classVD}{VD}$<$ T $>$\+::modificar\+Elemento (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{T}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metodo del objeto \hyperlink{classVD}{VD} para modificar un elemento. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pos} & entero que indica la posicion a modificar \\
+\hline
+{\em x} & variable de la clase T \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+El dato de la posicion pos del array dinamico datos cambia su valor al de x 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVD_a65a0f383bce59447393168d183c8a945}\label{classVD_a65a0f383bce59447393168d183c8a945}} 
+\index{VD@{VD}!obtener\+Desviacion@{obtener\+Desviacion}}
+\index{obtener\+Desviacion@{obtener\+Desviacion}!VD@{VD}}
+\subsubsection{\texorpdfstring{obtener\+Desviacion()}{obtenerDesviacion()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+float \hyperlink{classVD}{VD}$<$ T $>$\+::obtener\+Desviacion (\begin{DoxyParamCaption}\item[{float}]{varianza }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metodo del template \hyperlink{classVD}{VD} utilizado para obtener la desviación típica. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em varianza} & float cuyo valor debe de ser la varianza calculada mediante el metodo obtener\+Varianza \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+float cuyo valor es la desviación tipica de los elementos del array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVD_aa480a2e4480402b23d9ae83fd1cf661e}\label{classVD_aa480a2e4480402b23d9ae83fd1cf661e}} 
+\index{VD@{VD}!obtener\+Media@{obtener\+Media}}
+\index{obtener\+Media@{obtener\+Media}!VD@{VD}}
+\subsubsection{\texorpdfstring{obtener\+Media()}{obtenerMedia()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+float \hyperlink{classVD}{VD}$<$ T $>$\+::obtener\+Media (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metodo del template \hyperlink{classVD}{VD} utilizado para obtener la media. 
+
+\begin{DoxyReturn}{Devuelve}
+float cuyo valor es la media de los elementos del array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVD_a9aa1d47f997319e54e1429363e830ef7}\label{classVD_a9aa1d47f997319e54e1429363e830ef7}} 
+\index{VD@{VD}!obtener\+Varianza@{obtener\+Varianza}}
+\index{obtener\+Varianza@{obtener\+Varianza}!VD@{VD}}
+\subsubsection{\texorpdfstring{obtener\+Varianza()}{obtenerVarianza()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+float \hyperlink{classVD}{VD}$<$ T $>$\+::obtener\+Varianza (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metodo del template \hyperlink{classVD}{VD} utilizado para obtener la varianza. 
+
+\begin{DoxyReturn}{Devuelve}
+float cuyo valor es la varianza de los elementos del array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVD_ad97cd77c2bad24bba0884bacc050f7e5}\label{classVD_ad97cd77c2bad24bba0884bacc050f7e5}} 
+\index{VD@{VD}!operator=@{operator=}}
+\index{operator=@{operator=}!VD@{VD}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classVD}{VD}\& \hyperlink{classVD}{VD}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classVD}{VD}$<$ T $>$ \&}]{original }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operador de asignación del objeto \hyperlink{classVD}{VD}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em original} & es un objeto de la clase \hyperlink{classVD}{VD} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\hyperlink{classVD}{VD}\& con el mismo valor que original 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+\hyperlink{classVD}{VD}\& ha de ser distinto a original 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classVD_a7d80240b5791d62b7e27657763afe712}\label{classVD_a7d80240b5791d62b7e27657763afe712}} 
+\index{VD@{VD}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!VD@{VD}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T\& \hyperlink{classVD}{VD}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metodo subíndice del objeto \hyperlink{classVD}{VD} utilizado para acceder al dato correspondiente a una posición del array dinámico. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em i} & entero que indica la posicion del array a la que se va a acceder \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+T\& localizado en la posicion i del array dinámico datos 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+i debe ser mayor o igual a 0 y menor o igual a nelementos 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classVD_a16ae24a4b545a02baf6733ba5c066346}\label{classVD_a16ae24a4b545a02baf6733ba5c066346}} 
+\index{VD@{VD}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!VD@{VD}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+const T\& \hyperlink{classVD}{VD}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metodo subíndice del objeto \hyperlink{classVD}{VD} utilizado para acceder al dato correspondiente a una posición del array dinámico. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em i} & entero que indica la posicion del array a la que se va a acceder \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+T\& localizado en la posicion i del array dinámico datos 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVD_a473e1573994209fa70e955bc73b0e8c4}\label{classVD_a473e1573994209fa70e955bc73b0e8c4}} 
+\index{VD@{VD}!resize@{resize}}
+\index{resize@{resize}!VD@{VD}}
+\subsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classVD}{VD}$<$ T $>$\+::resize (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+nelementos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metodo que cambia la memoria reservada del array dinamico datos por uno determinado. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & entero que indica el tamaño que va a tener el array redimensionado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Se redimensiona el array dinámico datos con un tamaño n 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+n debe de ser diferente al valor de nelementos 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classVD_ac6aea049465bd63188c8e66df39c6dd5}\label{classVD_ac6aea049465bd63188c8e66df39c6dd5}} 
+\index{VD@{VD}!set@{set}}
+\index{set@{set}!VD@{VD}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classVD}{VD}$<$ T $>$\+::set (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metodo set del objeto \hyperlink{classVD}{VD}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em i} & entero que indica la posicion del array a la que se va a acceder y el valor que se va a introducir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Se asigna el valor i a la posicion i del array dinamico i 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVD_a411ad026db1c8e0617d9031f1f1017a5}\label{classVD_a411ad026db1c8e0617d9031f1f1017a5}} 
+\index{VD@{VD}!size@{size}}
+\index{size@{size}!VD@{VD}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+int \hyperlink{classVD}{VD}$<$ T $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metodo get del objeto \hyperlink{classVD}{VD} para conseguir el tamaño del array dinamico. 
+
+\begin{DoxyReturn}{Devuelve}
+int con el valor de la variable nelementos 
+\end{DoxyReturn}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+include/V\+D.\+hpp\end{DoxyCompactItemize}
