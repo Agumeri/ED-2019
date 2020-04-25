@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>El cocinero integral: Fichero Fuente include/instrucciones.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">El cocinero integral
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">instrucciones.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifndef INSTRUCCIONES_H</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define INSTRUCCIONES_H</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;stack&gt;</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;arbolbinario.h&quot;</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;acciones.h&quot;</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classinstrucciones.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classinstrucciones.html">instrucciones</a>{</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classArbolBinario.html">ArbolBinario&lt;string&gt;</a> datos;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="classacciones.html">acciones</a> acc;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        </div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classinstrucciones.html">instrucciones</a>();</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classinstrucciones.html">instrucciones</a>(<span class="keyword">const</span> <a class="code" href="classArbolBinario.html">ArbolBinario&lt;string&gt;</a> &amp;otro, <span class="keyword">const</span> <a class="code" href="classacciones.html">acciones</a> &amp;accion);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="classinstrucciones.html">instrucciones</a>(<span class="keyword">const</span> <a class="code" href="classinstrucciones.html">instrucciones</a>&amp; otras);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        ~<a class="code" href="classinstrucciones.html">instrucciones</a>();</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">friend</span> ostream&amp; operator&lt;&lt;(ostream&amp; os, <a class="code" href="classinstrucciones.html">instrucciones</a> inst);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keyword">friend</span> istream&amp; operator&gt;&gt;(istream&amp; is, <a class="code" href="classinstrucciones.html">instrucciones</a> &amp;inst);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        pair&lt;bool,char&gt; esAccion(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;accion);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">void</span> aniadir_acciones(<a class="code" href="classacciones.html">acciones</a> fichero_acciones);</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="classArbolBinario.html">ArbolBinario&lt;string&gt;</a> getArbol();</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordtype">void</span> calcularInstruccionesFusion( <a class="code" href="classinstrucciones.html">instrucciones</a> i1, <a class="code" href="classinstrucciones.html">instrucciones</a> i2);</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif //fin de instrucciones.h</span></div><div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">TDA acciones. </div></div>
+<div class="ttc" id="classArbolBinario_html"><div class="ttname"><a href="classArbolBinario.html">ArbolBinario&lt; string &gt;</a></div></div>
+<div class="ttc" id="classinstrucciones_html"><div class="ttname"><a href="classinstrucciones.html">instrucciones</a></div><div class="ttdef"><b>Definition:</b> instrucciones.h:25</div></div>
+<div class="ttc" id="classacciones_html"><div class="ttname"><a href="classacciones.html">acciones</a></div><div class="ttdef"><b>Definition:</b> acciones.h:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

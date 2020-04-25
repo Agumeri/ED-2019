@@ -1,0 +1,268 @@
+\hypertarget{classIngredientes}{}\section{Referencia de la Clase Ingredientes}
+\label{classIngredientes}\index{Ingredientes@{Ingredientes}}
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classIngredientes_1_1const__iterator}{const\+\_\+iterator}
+\item 
+class \hyperlink{classIngredientes_1_1iterator}{iterator}
+\end{DoxyCompactItemize}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIngredientes_af714f2431abc9f391271a5ce36d20fba}\label{classIngredientes_af714f2431abc9f391271a5ce36d20fba}} 
+\hyperlink{classIngredientes_1_1iterator}{iterator} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classIngredientes_a743696bb30ce1ff6d970496be6273383}\label{classIngredientes_a743696bb30ce1ff6d970496be6273383}} 
+\hyperlink{classIngredientes_1_1iterator}{iterator} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classIngredientes_a18c3774d89ce0e1f12b29e381d77f795}\label{classIngredientes_a18c3774d89ce0e1f12b29e381d77f795}} 
+\hyperlink{classIngredientes_1_1const__iterator}{const\+\_\+iterator} {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classIngredientes_a952de40063794632409a027d166cd6c9}\label{classIngredientes_a952de40063794632409a027d166cd6c9}} 
+\hyperlink{classIngredientes_1_1const__iterator}{const\+\_\+iterator} {\bfseries end} () const
+\item 
+\hyperlink{classIngredientes}{Ingredientes} \hyperlink{classIngredientes_a62ad2bb49e19ce82df5d04fe94081e9c}{operator=} (const \hyperlink{classIngredientes}{Ingredientes} \&I)
+\begin{DoxyCompactList}\small\item\em Sobrecarga de operador =. \end{DoxyCompactList}\item 
+void \hyperlink{classIngredientes_a05c66a6f99e091939e09ee79cd11402a}{aniadir} (\hyperlink{classIngrediente}{Ingrediente} \&ing)
+\begin{DoxyCompactList}\small\item\em Metodo del objeto \hyperlink{classIngredientes}{Ingredientes} que añade un elemento. \end{DoxyCompactList}\item 
+void \hyperlink{classIngredientes_a6cd27f6353a430fae6db51695dac95b5}{ordenar\+Por\+Nombre} ()
+\begin{DoxyCompactList}\small\item\em Ordena el objeto por nombre. \end{DoxyCompactList}\item 
+void \hyperlink{classIngredientes_a9a3accd03d7af199cd1ee99350ab5626}{Imprimir\+Por\+Tipo} (ostream \&os)
+\begin{DoxyCompactList}\small\item\em Metodo que llama a Ordenar\+Por\+Tipo y lo imprime. \end{DoxyCompactList}\item 
+\hyperlink{classIngredientes}{Ingredientes} \hyperlink{classIngredientes_a0ed6997b0c31498c42562d91a6df955d}{ordenar\+Por\+Tipo} ()
+\begin{DoxyCompactList}\small\item\em Metodo que ordena por tipo un objeto \hyperlink{classIngredientes}{Ingredientes}. \end{DoxyCompactList}\item 
+int \hyperlink{classIngredientes_aca2d4295b616fd0efeafce91009e0dda}{size} ()
+\begin{DoxyCompactList}\small\item\em Metodo get del objeto \hyperlink{classIngredientes}{Ingredientes}. \end{DoxyCompactList}\item 
+\hyperlink{classIngrediente}{Ingrediente} \hyperlink{classIngredientes_a1eddfac49913e486490721f6c114bf30}{get} (string n)
+\begin{DoxyCompactList}\small\item\em Metodo get del objeto \hyperlink{classIngredientes}{Ingredientes} que devuelve un objeto de la clase \hyperlink{classIngrediente}{Ingrediente}. \end{DoxyCompactList}\item 
+void \hyperlink{classIngredientes_af3fa6c08d9fea867c2f4dd3efad4223c}{borrar} (const string \&nombre)
+\begin{DoxyCompactList}\small\item\em Metodo del objeto \hyperlink{classIngredientes}{Ingredientes} que borra un \hyperlink{classIngrediente}{Ingrediente} segun su nombre. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \hyperlink{classIngredientes_a9869f4642af46cd91d426c9a4e22019a}{get\+Tipos} ()
+\begin{DoxyCompactList}\small\item\em Metodo get del objeto \hyperlink{classIngredientes}{Ingredientes}. \end{DoxyCompactList}\item 
+\hyperlink{classIngredientes}{Ingredientes} \hyperlink{classIngredientes_a513a2a7af0995e893b288ca4cb4c49ef}{get\+Ingrediente\+Tipo} (string tipo)
+\begin{DoxyCompactList}\small\item\em Metodo que devuelve un \hyperlink{classIngredientes}{Ingredientes} auxiliar con el tipo especifico. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIngredientes_a0d179d0ffec925fda2a931e022c0f87c}\label{classIngredientes_a0d179d0ffec925fda2a931e022c0f87c}} 
+vector$<$ \hyperlink{classIngrediente}{Ingrediente} $>$ {\bfseries datos}
+\item 
+\mbox{\Hypertarget{classIngredientes_a0702f3e37510eada2125dbb5735e7604}\label{classIngredientes_a0702f3e37510eada2125dbb5735e7604}} 
+vector$<$ int $>$ {\bfseries indice\+\_\+tipo}
+\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classIngredientes_a933ab431055a2a381448533ff8aa3299}{operator$<$$<$} (ostream \&os, const \hyperlink{classIngredientes}{Ingredientes} \&I)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del flujo de salida. \end{DoxyCompactList}\item 
+istream \& \hyperlink{classIngredientes_afa2cabeefdee6cf26890ffd55bb3a7f3}{operator$>$$>$} (istream \&is, \hyperlink{classIngredientes}{Ingredientes} \&I)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del flujo de entrada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classIngredientes_a05c66a6f99e091939e09ee79cd11402a}\label{classIngredientes_a05c66a6f99e091939e09ee79cd11402a}} 
+\index{Ingredientes@{Ingredientes}!aniadir@{aniadir}}
+\index{aniadir@{aniadir}!Ingredientes@{Ingredientes}}
+\subsubsection{\texorpdfstring{aniadir()}{aniadir()}}
+{\footnotesize\ttfamily void Ingredientes\+::aniadir (\begin{DoxyParamCaption}\item[{\hyperlink{classIngrediente}{Ingrediente} \&}]{ing }\end{DoxyParamCaption})}
+
+
+
+Metodo del objeto \hyperlink{classIngredientes}{Ingredientes} que añade un elemento. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em I} & ingrediente que se va a añadir al final del vector$<$\+Ingrediente$>$ datos \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+El objeto \hyperlink{classIngredientes}{Ingredientes} tiene un dato mas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIngredientes_af3fa6c08d9fea867c2f4dd3efad4223c}\label{classIngredientes_af3fa6c08d9fea867c2f4dd3efad4223c}} 
+\index{Ingredientes@{Ingredientes}!borrar@{borrar}}
+\index{borrar@{borrar}!Ingredientes@{Ingredientes}}
+\subsubsection{\texorpdfstring{borrar()}{borrar()}}
+{\footnotesize\ttfamily void Ingredientes\+::borrar (\begin{DoxyParamCaption}\item[{const string \&}]{nombre }\end{DoxyParamCaption})}
+
+
+
+Metodo del objeto \hyperlink{classIngredientes}{Ingredientes} que borra un \hyperlink{classIngrediente}{Ingrediente} segun su nombre. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nombre} & string con el nombre de un \hyperlink{classIngrediente}{Ingrediente} de V\+D$<$\+Ingrediente$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIngredientes_a1eddfac49913e486490721f6c114bf30}\label{classIngredientes_a1eddfac49913e486490721f6c114bf30}} 
+\index{Ingredientes@{Ingredientes}!get@{get}}
+\index{get@{get}!Ingredientes@{Ingredientes}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \hyperlink{classIngrediente}{Ingrediente} Ingredientes\+::get (\begin{DoxyParamCaption}\item[{string}]{n }\end{DoxyParamCaption})}
+
+
+
+Metodo get del objeto \hyperlink{classIngredientes}{Ingredientes} que devuelve un objeto de la clase \hyperlink{classIngrediente}{Ingrediente}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & string con un nombre de ingrediente \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\hyperlink{classIngrediente}{Ingrediente} cuyo nombre es n 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIngredientes_a513a2a7af0995e893b288ca4cb4c49ef}\label{classIngredientes_a513a2a7af0995e893b288ca4cb4c49ef}} 
+\index{Ingredientes@{Ingredientes}!get\+Ingrediente\+Tipo@{get\+Ingrediente\+Tipo}}
+\index{get\+Ingrediente\+Tipo@{get\+Ingrediente\+Tipo}!Ingredientes@{Ingredientes}}
+\subsubsection{\texorpdfstring{get\+Ingrediente\+Tipo()}{getIngredienteTipo()}}
+{\footnotesize\ttfamily \hyperlink{classIngredientes}{Ingredientes} Ingredientes\+::get\+Ingrediente\+Tipo (\begin{DoxyParamCaption}\item[{string}]{tipo }\end{DoxyParamCaption})}
+
+
+
+Metodo que devuelve un \hyperlink{classIngredientes}{Ingredientes} auxiliar con el tipo especifico. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em tipo} & string cuyo valor equivale a un tipo de \hyperlink{classIngrediente}{Ingrediente} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve un objeto \hyperlink{classIngredientes}{Ingredientes} con el tipo pasado por param 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIngredientes_a9869f4642af46cd91d426c9a4e22019a}\label{classIngredientes_a9869f4642af46cd91d426c9a4e22019a}} 
+\index{Ingredientes@{Ingredientes}!get\+Tipos@{get\+Tipos}}
+\index{get\+Tipos@{get\+Tipos}!Ingredientes@{Ingredientes}}
+\subsubsection{\texorpdfstring{get\+Tipos()}{getTipos()}}
+{\footnotesize\ttfamily vector$<$string$>$ Ingredientes\+::get\+Tipos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metodo get del objeto \hyperlink{classIngredientes}{Ingredientes}. 
+
+\begin{DoxyReturn}{Devuelve}
+vector$<$string$>$ con todos los tipos de los \hyperlink{classIngredientes}{Ingredientes} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIngredientes_a9a3accd03d7af199cd1ee99350ab5626}\label{classIngredientes_a9a3accd03d7af199cd1ee99350ab5626}} 
+\index{Ingredientes@{Ingredientes}!Imprimir\+Por\+Tipo@{Imprimir\+Por\+Tipo}}
+\index{Imprimir\+Por\+Tipo@{Imprimir\+Por\+Tipo}!Ingredientes@{Ingredientes}}
+\subsubsection{\texorpdfstring{Imprimir\+Por\+Tipo()}{ImprimirPorTipo()}}
+{\footnotesize\ttfamily void Ingredientes\+::\+Imprimir\+Por\+Tipo (\begin{DoxyParamCaption}\item[{ostream \&}]{os }\end{DoxyParamCaption})}
+
+
+
+Metodo que llama a Ordenar\+Por\+Tipo y lo imprime. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em os} & ostream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el objeto \hyperlink{classIngredientes}{Ingredientes} ordenado de menor a mayor por tipo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIngredientes_a62ad2bb49e19ce82df5d04fe94081e9c}\label{classIngredientes_a62ad2bb49e19ce82df5d04fe94081e9c}} 
+\index{Ingredientes@{Ingredientes}!operator=@{operator=}}
+\index{operator=@{operator=}!Ingredientes@{Ingredientes}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classIngredientes}{Ingredientes} Ingredientes\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classIngredientes}{Ingredientes} \&}]{I }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga de operador =. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em I} & \hyperlink{classIngredientes}{Ingredientes} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Un dato de tipo \hyperlink{classIngredientes}{Ingredientes} que tiene lo mismo que I 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIngredientes_a6cd27f6353a430fae6db51695dac95b5}\label{classIngredientes_a6cd27f6353a430fae6db51695dac95b5}} 
+\index{Ingredientes@{Ingredientes}!ordenar\+Por\+Nombre@{ordenar\+Por\+Nombre}}
+\index{ordenar\+Por\+Nombre@{ordenar\+Por\+Nombre}!Ingredientes@{Ingredientes}}
+\subsubsection{\texorpdfstring{ordenar\+Por\+Nombre()}{ordenarPorNombre()}}
+{\footnotesize\ttfamily void Ingredientes\+::ordenar\+Por\+Nombre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ordena el objeto por nombre. 
+
+\begin{DoxyReturn}{Devuelve}
+El objeto \hyperlink{classIngrediente}{Ingrediente} ordenado por el nombre de los ingredientes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIngredientes_a0ed6997b0c31498c42562d91a6df955d}\label{classIngredientes_a0ed6997b0c31498c42562d91a6df955d}} 
+\index{Ingredientes@{Ingredientes}!ordenar\+Por\+Tipo@{ordenar\+Por\+Tipo}}
+\index{ordenar\+Por\+Tipo@{ordenar\+Por\+Tipo}!Ingredientes@{Ingredientes}}
+\subsubsection{\texorpdfstring{ordenar\+Por\+Tipo()}{ordenarPorTipo()}}
+{\footnotesize\ttfamily \hyperlink{classIngredientes}{Ingredientes} Ingredientes\+::ordenar\+Por\+Tipo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metodo que ordena por tipo un objeto \hyperlink{classIngredientes}{Ingredientes}. 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve el objeto \hyperlink{classIngredientes}{Ingredientes} pero ordenado de menor a mayor por tipo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIngredientes_aca2d4295b616fd0efeafce91009e0dda}\label{classIngredientes_aca2d4295b616fd0efeafce91009e0dda}} 
+\index{Ingredientes@{Ingredientes}!size@{size}}
+\index{size@{size}!Ingredientes@{Ingredientes}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int Ingredientes\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metodo get del objeto \hyperlink{classIngredientes}{Ingredientes}. 
+
+\begin{DoxyReturn}{Devuelve}
+int con el tamaño de datos 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de las funciones relacionadas y clases amigas}
+\mbox{\Hypertarget{classIngredientes_a933ab431055a2a381448533ff8aa3299}\label{classIngredientes_a933ab431055a2a381448533ff8aa3299}} 
+\index{Ingredientes@{Ingredientes}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Ingredientes@{Ingredientes}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \hyperlink{classIngredientes}{Ingredientes} \&}]{I }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Sobrecarga del flujo de salida. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em os} & ostream \\
+\hline
+{\em I} & \hyperlink{classIngredientes}{Ingredientes} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve los ingredientes impresos por pantalla, mostrando sus atributos 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIngredientes_afa2cabeefdee6cf26890ffd55bb3a7f3}\label{classIngredientes_afa2cabeefdee6cf26890ffd55bb3a7f3}} 
+\index{Ingredientes@{Ingredientes}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Ingredientes@{Ingredientes}}
+\subsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{is,  }\item[{\hyperlink{classIngredientes}{Ingredientes} \&}]{I }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Sobrecarga del flujo de entrada. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em is} & istream \\
+\hline
+{\em I} & \hyperlink{classIngredientes}{Ingredientes} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Permite la creación de \hyperlink{classIngredientes}{Ingredientes} mediante la lectura del fichero 
+\end{DoxyReturn}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+include/Ingredientes.\+h\end{DoxyCompactItemize}

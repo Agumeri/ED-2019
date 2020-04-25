@@ -1,0 +1,889 @@
+\hypertarget{classArbolBinario}{}\section{Referencia de la plantilla de la Clase Arbol\+Binario$<$ T $>$}
+\label{classArbolBinario}\index{Arbol\+Binario$<$ T $>$@{Arbol\+Binario$<$ T $>$}}
+
+
+{\ttfamily \#include $<$arbolbinario.\+h$>$}
+
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo}
+\item 
+class \hyperlink{classArbolBinario_1_1inorden__iterador}{inorden\+\_\+iterador}
+\item 
+class \hyperlink{classArbolBinario_1_1nodo}{nodo}
+\item 
+class \hyperlink{classArbolBinario_1_1postorden__iterador}{postorden\+\_\+iterador}
+\item 
+class \hyperlink{classArbolBinario_1_1preorden__iterador}{preorden\+\_\+iterador}
+\end{DoxyCompactItemize}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classArbolBinario_a1bad900ff9a1a811446c5e729e92fc5e}\label{classArbolBinario_a1bad900ff9a1a811446c5e729e92fc5e}} 
+\hyperlink{classArbolBinario_a1bad900ff9a1a811446c5e729e92fc5e}{Arbol\+Binario} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArbolBinario_a9d4e385399072873beb86170628449bb}\label{classArbolBinario_a9d4e385399072873beb86170628449bb}} 
+\hyperlink{classArbolBinario_a9d4e385399072873beb86170628449bb}{Arbol\+Binario} (const T \&e)
+\begin{DoxyCompactList}\small\item\em Constructor con parametros. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArbolBinario_a9f2da510e19bff23fd061ff0f1309433}\label{classArbolBinario_a9f2da510e19bff23fd061ff0f1309433}} 
+{\bfseries Arbol\+Binario} (typename \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo} n)
+\item 
+\mbox{\Hypertarget{classArbolBinario_a3be887e389952b296ea5af62852621d5}\label{classArbolBinario_a3be887e389952b296ea5af62852621d5}} 
+\hyperlink{classArbolBinario_a3be887e389952b296ea5af62852621d5}{Arbol\+Binario} (const \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$ \&ab)
+\begin{DoxyCompactList}\small\item\em Constructor por copia. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArbolBinario_af1f1594a37b45c20b4fcbab88613d52d}\label{classArbolBinario_af1f1594a37b45c20b4fcbab88613d52d}} 
+\hyperlink{classArbolBinario_af1f1594a37b45c20b4fcbab88613d52d}{$\sim$\+Arbol\+Binario} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$ \& \hyperlink{classArbolBinario_a3817bd260b6cb4687eef91928d94be17}{operator=} (const \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$ \&ab)
+\begin{DoxyCompactList}\small\item\em Operador de asignacion. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArbolBinario_a8ced95c7eae98ffd79eb46dcc99df523}\label{classArbolBinario_a8ced95c7eae98ffd79eb46dcc99df523}} 
+\hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo} \hyperlink{classArbolBinario_a8ced95c7eae98ffd79eb46dcc99df523}{get\+Raiz} () const
+\begin{DoxyCompactList}\small\item\em Obtiene un nodo apuntando a la raiz del arbol. \end{DoxyCompactList}\item 
+\hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo} \hyperlink{classArbolBinario_a82155da74eeeac7e52b9b0cc2f2d05f2}{Insertar\+\_\+\+Hi} (typename \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo} n, const T \&e)
+\begin{DoxyCompactList}\small\item\em Inserta un subarbol como hijo izquierdo del nodo. Este suabarbol solamente tiene un nodo. \end{DoxyCompactList}\item 
+\hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo} \hyperlink{classArbolBinario_aa917f4b80d735b3494e1793de9457fb4}{Insertar\+\_\+\+Hi} (typename \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo} n, \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$ \&tree)
+\begin{DoxyCompactList}\small\item\em Inserta un subarbol como hijo izquierdo del nodo. \end{DoxyCompactList}\item 
+\hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo} \hyperlink{classArbolBinario_a1896b66e7b38f98ea4010e131998f376}{Insertar\+\_\+\+Hd} (typename \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo} n, const T \&e)
+\begin{DoxyCompactList}\small\item\em Inserta un subarbol como hijo derecho del nodo. Este suabarbol solamente tiene un nodo. \end{DoxyCompactList}\item 
+\hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo} \hyperlink{classArbolBinario_a7e0b2453f969c6289809aaba1f03fe62}{Insertar\+\_\+\+Hd} (typename \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo} n, \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$ \&tree)
+\begin{DoxyCompactList}\small\item\em Inserta un subarbol como hijo derecho del nodo. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArbolBinario_afaa11ef16d36b20bb116a1ec892e0e46}\label{classArbolBinario_afaa11ef16d36b20bb116a1ec892e0e46}} 
+void \hyperlink{classArbolBinario_afaa11ef16d36b20bb116a1ec892e0e46}{Podar\+\_\+\+Hi} (typename \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo} pos)
+\begin{DoxyCompactList}\small\item\em Poda el hijo izquierdo del nodo dado \+: posicion del nodo. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArbolBinario_a08564b2f73b4013437572860de8aafad}\label{classArbolBinario_a08564b2f73b4013437572860de8aafad}} 
+void \hyperlink{classArbolBinario_a08564b2f73b4013437572860de8aafad}{Podar\+\_\+\+Hd} (typename \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo} pos)
+\begin{DoxyCompactList}\small\item\em Poda el hijo derecho del nodo dado \+: posicion del nodo. \end{DoxyCompactList}\item 
+\hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$ \hyperlink{classArbolBinario_ae48b89acb45fc83cc67ca8e78e31f903}{Podar\+Hi\+\_\+\+Get\+Subtree} (typename \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo} pos)
+\begin{DoxyCompactList}\small\item\em Poda el hijo derecho o izquierda del nodo del nodo dado \+: posicion del nodo. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArbolBinario_a2292c407fe19a90088d9c1e23b58bdbd}\label{classArbolBinario_a2292c407fe19a90088d9c1e23b58bdbd}} 
+\hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$ {\bfseries Podar\+Hd\+\_\+\+Get\+Subtree} (typename \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo} pos)
+\item 
+void \hyperlink{classArbolBinario_a9afe576ade74a09a9b19fb0874749cdb}{Sustituye\+\_\+\+Subarbol} (typename \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo} pos\+\_\+this, const \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$ \&a, typename \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo} pos\+\_\+a)
+\begin{DoxyCompactList}\small\item\em Se sustituye el subarbol por otro subarbol de otro arbol. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArbolBinario_a667e476cc2058a4edbafa546bba5ec0f}\label{classArbolBinario_a667e476cc2058a4edbafa546bba5ec0f}} 
+void \hyperlink{classArbolBinario_a667e476cc2058a4edbafa546bba5ec0f}{clear} ()
+\begin{DoxyCompactList}\small\item\em Borra todo arbol, dejandolo como un arbol vacio. \end{DoxyCompactList}\item 
+bool \hyperlink{classArbolBinario_a574a76889f9bb8a80080288a16f9441f}{empty} () const
+\begin{DoxyCompactList}\small\item\em Arbol vacio. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classArbolBinario_a3df34c7cbcbaa42b68884e5fcde93334}{size} () const
+\begin{DoxyCompactList}\small\item\em Tamaño de un arbol. \end{DoxyCompactList}\item 
+bool \hyperlink{classArbolBinario_a238f5acc35279cca386b0b68ae20de42}{operator==} (const \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$ \&a) const
+\begin{DoxyCompactList}\small\item\em Igualdad entre dos arboles. \end{DoxyCompactList}\item 
+bool \hyperlink{classArbolBinario_ac773f91e274ab6ec695492e5dfea4fff}{operator!=} (const \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$ \&a) const
+\begin{DoxyCompactList}\small\item\em Desigualdad entre dos arboles. \end{DoxyCompactList}\item 
+void \hyperlink{classArbolBinario_af8cd1ed84675bcb2075ba1a502d8ee39}{Recorrido\+Pre\+Orden} (ostream \&os) const
+\begin{DoxyCompactList}\small\item\em Recorrido en Preorden. \end{DoxyCompactList}\item 
+void \hyperlink{classArbolBinario_a717119bc343e038c8af7c00423c9b103}{Recorrido\+In\+Orden} (ostream \&os) const
+\begin{DoxyCompactList}\small\item\em Recorrido en Inorden. \end{DoxyCompactList}\item 
+void \hyperlink{classArbolBinario_aa8380fa17126e49693942ddeadf3adc5}{Recorrido\+Post\+Orden} (ostream \&os) const
+\begin{DoxyCompactList}\small\item\em Recorrido en Postorden. \end{DoxyCompactList}\item 
+void \hyperlink{classArbolBinario_af1617842b59246c0bbb6e2a81b7638b6}{Recorrido\+Niveles} (ostream \&os) const
+\begin{DoxyCompactList}\small\item\em Recorrido por niveles. \end{DoxyCompactList}\item 
+\hyperlink{classArbolBinario_1_1preorden__iterador}{preorden\+\_\+iterador} \hyperlink{classArbolBinario_aa0fc3ba9f91f7167d1f83df2f3b1a8b9}{beginpreorden} () const
+\begin{DoxyCompactList}\small\item\em Comienzo de un iterador \hyperlink{classArbolBinario_1_1preorden__iterador}{preorden\+\_\+iterador}. \end{DoxyCompactList}\item 
+\hyperlink{classArbolBinario_1_1preorden__iterador}{preorden\+\_\+iterador} \hyperlink{classArbolBinario_ad1c64408fd252fa134125d7ca5717e3a}{endpreorden} () const
+\begin{DoxyCompactList}\small\item\em Final de un iterador \hyperlink{classArbolBinario_1_1preorden__iterador}{preorden\+\_\+iterador}. \end{DoxyCompactList}\item 
+\hyperlink{classArbolBinario_1_1inorden__iterador}{inorden\+\_\+iterador} \hyperlink{classArbolBinario_af55ee35607b74ebc3036dc9c5c1c2ce7}{begininorden} () const
+\begin{DoxyCompactList}\small\item\em Comienzo de un iterador \hyperlink{classArbolBinario_1_1inorden__iterador}{inorden\+\_\+iterador}. \end{DoxyCompactList}\item 
+\hyperlink{classArbolBinario_1_1inorden__iterador}{inorden\+\_\+iterador} \hyperlink{classArbolBinario_a62a0048bb6d35947409496b55b5bd303}{endinorden} () const
+\begin{DoxyCompactList}\small\item\em Final de un iterador \hyperlink{classArbolBinario_1_1inorden__iterador}{inorden\+\_\+iterador}. \end{DoxyCompactList}\item 
+\hyperlink{classArbolBinario_1_1postorden__iterador}{postorden\+\_\+iterador} \hyperlink{classArbolBinario_a1bcccd1312f5127ad811c90dad94931d}{beginpostorden} () const
+\begin{DoxyCompactList}\small\item\em Comienzo de un iterador \hyperlink{classArbolBinario_1_1postorden__iterador}{postorden\+\_\+iterador}. \end{DoxyCompactList}\item 
+\hyperlink{classArbolBinario_1_1postorden__iterador}{postorden\+\_\+iterador} \hyperlink{classArbolBinario_ad4ead2ad6b0e81f185fb540184a15bdb}{endpostorden} () const
+\begin{DoxyCompactList}\small\item\em Final de un iterador \hyperlink{classArbolBinario_1_1postorden__iterador}{postorden\+\_\+iterador}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classArbolBinario_a2f4333678ab24a80ea88f05151d3b5ab}{Copiar\+Info} (\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$\&dest, const \hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$const \&source)
+\begin{DoxyCompactList}\small\item\em Copiar un subarbol en otro. \end{DoxyCompactList}\item 
+void \hyperlink{classArbolBinario_a9a9320b7ec787b55a9fd65c041fea135}{Borrar\+Info} (\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$\&d)
+\begin{DoxyCompactList}\small\item\em Borra toda la información asociada a un subarbol. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classArbolBinario_abd35b63011c7bc50852ab039ea8500f0}{numero\+\_\+nodos} (const \hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$d) const
+\begin{DoxyCompactList}\small\item\em Devuelve el numero de nodos del subarbol. \end{DoxyCompactList}\item 
+bool \hyperlink{classArbolBinario_a8618907c8154d008f64252403e871bf4}{iguales} (const \hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$s1, const \hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$s2) const
+\begin{DoxyCompactList}\small\item\em Devuelve true si los dos subarboles son iguales. \end{DoxyCompactList}\item 
+void \hyperlink{classArbolBinario_aca7d7c365ead3aa2040ffc64e1dfb1f4}{Insertar\+Hijo\+Izquierda} (\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$n, \hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$sub)
+\begin{DoxyCompactList}\small\item\em . Inserta un subarbol como hijo a la izquierda de uno dado \end{DoxyCompactList}\item 
+void \hyperlink{classArbolBinario_a87341ffccfe5ef304783c70adf86238d}{Insertar\+Hijo\+Izquierda} (\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$n, const T \&e)
+\begin{DoxyCompactList}\small\item\em . Inserta un subarbol como hijo a la izquierda de uno dado que consta de un solo nodo \end{DoxyCompactList}\item 
+void \hyperlink{classArbolBinario_a8f4971f20eb2a059b9b1ae117e7fe912}{Insertar\+Hijo\+Derecha} (\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$n, \hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$sub)
+\begin{DoxyCompactList}\small\item\em . Inserta un subarbol como hijo a la derecha de uno dado \end{DoxyCompactList}\item 
+void \hyperlink{classArbolBinario_ad625a7ef38fa30f0420b101e1655b4aa}{Insertar\+Hijo\+Derecha} (\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$n, const T \&e)
+\begin{DoxyCompactList}\small\item\em . Inserta un subarbol como hijo a la derecha de uno dado que consta de un solo nodo \end{DoxyCompactList}\item 
+void \hyperlink{classArbolBinario_a289083bf048ca95e482264ccf0ce4f42}{Podar\+Hijo\+Izquierda} (\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$n)
+\begin{DoxyCompactList}\small\item\em Elimina el hijo a la izquierda del subarbol dado. \end{DoxyCompactList}\item 
+void \hyperlink{classArbolBinario_afe7738999aed926e580faf68078bbe46}{Podar\+Hijo\+Derecha} (\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$n)
+\begin{DoxyCompactList}\small\item\em Elimina el hijo a la derecha del subarbol dado. \end{DoxyCompactList}\item 
+\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$ \hyperlink{classArbolBinario_a307e743bfe1264ff6cba2d484f0eb578}{Podar\+Hijo\+Izq\+\_\+\+Get\+Subtree} (\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$n)
+\begin{DoxyCompactList}\small\item\em Elimina el hijo a la izquierda del subarbol sin borrarlo. \end{DoxyCompactList}\item 
+\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$ \hyperlink{classArbolBinario_a4cb0bca4695c076648c41e968e7dae48}{Podar\+Hijo\+Der\+\_\+\+Get\+Subtree} (\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$n)
+\begin{DoxyCompactList}\small\item\em Elimina el hijo a la derecha del subarbol sin borrarlo. \end{DoxyCompactList}\item 
+void \hyperlink{classArbolBinario_a1a7dd97d706bfcf3c60a4cca1352f79c}{Recorrido\+Preorden} (ostream \&os, const \hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$n) const
+\begin{DoxyCompactList}\small\item\em Obtiene en un flujo de salida el recorrido Preorden del subarbol. \end{DoxyCompactList}\item 
+void \hyperlink{classArbolBinario_a84f79da821dfe396411e9a3145222199}{Recorrido\+Postorden} (ostream \&os, const \hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$n) const
+\begin{DoxyCompactList}\small\item\em Obtiene en un flujo de salida el recorrido Post\+Orden del subarbol. \end{DoxyCompactList}\item 
+void \hyperlink{classArbolBinario_a072dec8f8e0f43d3e4ec295702a287ec}{Recorrido\+Inorden} (ostream \&os, const \hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$n) const
+\begin{DoxyCompactList}\small\item\em Obtiene en un flujo de salida el recorrido inorden del subarbol. \end{DoxyCompactList}\item 
+void \hyperlink{classArbolBinario_a4030c86c360d2b07538ed03680d3fb89}{Recorrido\+Niveles} (ostream \&os, const \hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$n) const
+\begin{DoxyCompactList}\small\item\em Escribe en un flujo de salida del subarbol por niveles. \end{DoxyCompactList}\item 
+void \hyperlink{classArbolBinario_a4bc2c798ca826b372308d4c26e0ff4cb}{Lee} (istream \&is, \hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$\&n)
+\begin{DoxyCompactList}\small\item\em Lee un subarbol del flujo. \end{DoxyCompactList}\item 
+void \hyperlink{classArbolBinario_a7f3b03ed5ed75ad3ea38c18f93470616}{Escribe} (ostream \&os, const \hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$n) const
+\begin{DoxyCompactList}\small\item\em Escribe un subarbol en el flujo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classArbolBinario_a116619c6d1e1f8af4ebc95399a062801}\label{classArbolBinario_a116619c6d1e1f8af4ebc95399a062801}} 
+\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$ {\bfseries raiz}
+\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class U $>$ }\\ostream \& \hyperlink{classArbolBinario_a58c82e89a546bd6f38ad116466eabcb8}{operator$<$$<$} (ostream \&os, const \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ U $>$ \&ab)
+\begin{DoxyCompactList}\small\item\em Escritura de un arbol binario. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class U $>$ }\\istream \& \hyperlink{classArbolBinario_a917493bedd4f7e4430d3283f367ce599}{operator$>$$>$} (istream \&is, \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ U $>$ \&ab)
+\begin{DoxyCompactList}\small\item\em Lectura de un arbol binario. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+\subsubsection*{template$<$class T$>$\newline
+class Arbol\+Binario$<$ T $>$}
+
+T\+DA \hyperlink{classArbolBinario}{Arbol\+Binario}  Definición \+: Una instancia {\itshape a} del tipo de dato abstracto \hyperlink{classArbolBinario}{Arbol\+Binario} sobre un dominio T se puede construir como\+:
+\begin{DoxyItemize}
+\item Un objeto vacío si no contiene ningun elemento
+\item Un arbol que contiene un elemento destacad la raíz con un valor e en el dominio T denominado etiqueta y dos subarboles (Ti\+:subarbol izquierdo, y Td\+:subarbol derecho) del T.\+D.\+A Arbolbinario sobre T. Se establece una relación padre-\/hijo entre cada nodo y los nodos raíz de los subarboles ( si existen) que cuelgan de el. Lo denotamos como \{e,\{Ti\},\{Td\}\} Para poder usar el T\+DA \hyperlink{classArbolBinario}{Arbol\+Binario} se debe incluir Arbol\+Binario.\+h Son mutables. El espacio requerido para el almacenamiento es O(n) siendo n el numero de nodos. 
+\end{DoxyItemize}
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classArbolBinario_af55ee35607b74ebc3036dc9c5c1c2ce7}\label{classArbolBinario_af55ee35607b74ebc3036dc9c5c1c2ce7}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!begininorden@{begininorden}}
+\index{begininorden@{begininorden}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{begininorden()}{begininorden()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classArbolBinario_1_1inorden__iterador}{inorden\+\_\+iterador} \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::begininorden (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Comienzo de un iterador \hyperlink{classArbolBinario_1_1inorden__iterador}{inorden\+\_\+iterador}. 
+
+\begin{DoxyReturn}{Devuelve}
+un iterador de tipo inorden apuntando a la raiz 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classArbolBinario_a1bcccd1312f5127ad811c90dad94931d}\label{classArbolBinario_a1bcccd1312f5127ad811c90dad94931d}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!beginpostorden@{beginpostorden}}
+\index{beginpostorden@{beginpostorden}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{beginpostorden()}{beginpostorden()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classArbolBinario_1_1postorden__iterador}{postorden\+\_\+iterador} \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::beginpostorden (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Comienzo de un iterador \hyperlink{classArbolBinario_1_1postorden__iterador}{postorden\+\_\+iterador}. 
+
+\begin{DoxyReturn}{Devuelve}
+un iterador de tipo postorden apuntando a la raiz 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classArbolBinario_aa0fc3ba9f91f7167d1f83df2f3b1a8b9}\label{classArbolBinario_aa0fc3ba9f91f7167d1f83df2f3b1a8b9}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!beginpreorden@{beginpreorden}}
+\index{beginpreorden@{beginpreorden}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{beginpreorden()}{beginpreorden()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classArbolBinario_1_1preorden__iterador}{preorden\+\_\+iterador} \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::beginpreorden (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Comienzo de un iterador \hyperlink{classArbolBinario_1_1preorden__iterador}{preorden\+\_\+iterador}. 
+
+\begin{DoxyReturn}{Devuelve}
+un iterador de tipo preorden apuntando a la raiz 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classArbolBinario_a9a9320b7ec787b55a9fd65c041fea135}\label{classArbolBinario_a9a9320b7ec787b55a9fd65c041fea135}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Borrar\+Info@{Borrar\+Info}}
+\index{Borrar\+Info@{Borrar\+Info}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Borrar\+Info()}{BorrarInfo()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Borrar\+Info (\begin{DoxyParamCaption}\item[{\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$\&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Borra toda la información asociada a un subarbol. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em d} & raiz del subarbol a borrar. ES M\+O\+D\+I\+F\+I\+C\+A\+DO \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbolBinario_a2f4333678ab24a80ea88f05151d3b5ab}\label{classArbolBinario_a2f4333678ab24a80ea88f05151d3b5ab}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Copiar\+Info@{Copiar\+Info}}
+\index{Copiar\+Info@{Copiar\+Info}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Copiar\+Info()}{CopiarInfo()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Copiar\+Info (\begin{DoxyParamCaption}\item[{\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$\&}]{dest,  }\item[{const \hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$const \&}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Copiar un subarbol en otro. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em dest} & objeto donde queda la copia. ES M\+O\+D\+I\+F\+I\+C\+A\+DO \\
+\hline
+{\em source} & objeto desde el que se copia. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbolBinario_a574a76889f9bb8a80080288a16f9441f}\label{classArbolBinario_a574a76889f9bb8a80080288a16f9441f}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!empty@{empty}}
+\index{empty@{empty}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Arbol vacio. 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve si el arbol es vacio (true), y falso en caso contrario 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classArbolBinario_a62a0048bb6d35947409496b55b5bd303}\label{classArbolBinario_a62a0048bb6d35947409496b55b5bd303}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!endinorden@{endinorden}}
+\index{endinorden@{endinorden}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{endinorden()}{endinorden()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classArbolBinario_1_1inorden__iterador}{inorden\+\_\+iterador} \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::endinorden (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Final de un iterador \hyperlink{classArbolBinario_1_1inorden__iterador}{inorden\+\_\+iterador}. 
+
+\begin{DoxyReturn}{Devuelve}
+un iterador de tipo inorden apuntando al final 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classArbolBinario_ad4ead2ad6b0e81f185fb540184a15bdb}\label{classArbolBinario_ad4ead2ad6b0e81f185fb540184a15bdb}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!endpostorden@{endpostorden}}
+\index{endpostorden@{endpostorden}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{endpostorden()}{endpostorden()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classArbolBinario_1_1postorden__iterador}{postorden\+\_\+iterador} \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::endpostorden (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Final de un iterador \hyperlink{classArbolBinario_1_1postorden__iterador}{postorden\+\_\+iterador}. 
+
+\begin{DoxyReturn}{Devuelve}
+un iterador de tipo postorden apuntando al final 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classArbolBinario_ad1c64408fd252fa134125d7ca5717e3a}\label{classArbolBinario_ad1c64408fd252fa134125d7ca5717e3a}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!endpreorden@{endpreorden}}
+\index{endpreorden@{endpreorden}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{endpreorden()}{endpreorden()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classArbolBinario_1_1preorden__iterador}{preorden\+\_\+iterador} \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::endpreorden (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Final de un iterador \hyperlink{classArbolBinario_1_1preorden__iterador}{preorden\+\_\+iterador}. 
+
+\begin{DoxyReturn}{Devuelve}
+un iterador de tipo preorden apuntando al final 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classArbolBinario_a7f3b03ed5ed75ad3ea38c18f93470616}\label{classArbolBinario_a7f3b03ed5ed75ad3ea38c18f93470616}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Escribe@{Escribe}}
+\index{Escribe@{Escribe}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Escribe()}{Escribe()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Escribe (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$}]{n }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Escribe un subarbol en el flujo. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em is} & flujo de salida \\
+\hline
+{\em n} & subarbol que se escribe. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+si no existe el nodo aparece una x si existe una n 
+\end{DoxyNote}
+\mbox{\Hypertarget{classArbolBinario_a8618907c8154d008f64252403e871bf4}\label{classArbolBinario_a8618907c8154d008f64252403e871bf4}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!iguales@{iguales}}
+\index{iguales@{iguales}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{iguales()}{iguales()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::iguales (\begin{DoxyParamCaption}\item[{const \hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$}]{s1,  }\item[{const \hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$}]{s2 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Devuelve true si los dos subarboles son iguales. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em s1} & raiz del primer subarbol \\
+\hline
+{\em s2} & raiz del segundo subarbol \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+\+: el tipo T debe tener definido el operador == 
+\end{DoxyNote}
+\mbox{\Hypertarget{classArbolBinario_a1896b66e7b38f98ea4010e131998f376}\label{classArbolBinario_a1896b66e7b38f98ea4010e131998f376}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Insertar\+\_\+\+Hd@{Insertar\+\_\+\+Hd}}
+\index{Insertar\+\_\+\+Hd@{Insertar\+\_\+\+Hd}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Insertar\+\_\+\+Hd()}{Insertar\_Hd()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classArbolBinario}{Arbol\+Binario}$<$T$>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo} \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Insertar\+\_\+\+Hd (\begin{DoxyParamCaption}\item[{typename \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo}}]{n,  }\item[{const T \&}]{e }\end{DoxyParamCaption})}
+
+
+
+Inserta un subarbol como hijo derecho del nodo. Este suabarbol solamente tiene un nodo. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & posicion del nodo donde insertar el subarbol como hijo derecho \\
+\hline
+{\em e} & etiqueta de la raiz del subarbol que se inserta \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbolBinario_a7e0b2453f969c6289809aaba1f03fe62}\label{classArbolBinario_a7e0b2453f969c6289809aaba1f03fe62}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Insertar\+\_\+\+Hd@{Insertar\+\_\+\+Hd}}
+\index{Insertar\+\_\+\+Hd@{Insertar\+\_\+\+Hd}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Insertar\+\_\+\+Hd()}{Insertar\_Hd()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classArbolBinario}{Arbol\+Binario}$<$T$>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo} \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Insertar\+\_\+\+Hd (\begin{DoxyParamCaption}\item[{typename \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo}}]{n,  }\item[{\hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$ \&}]{tree }\end{DoxyParamCaption})}
+
+
+
+Inserta un subarbol como hijo derecho del nodo. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & posicion del nodo donde insertar el subarbol como hijo derecho \\
+\hline
+{\em tree} & subarbol que se inserta. ES M\+O\+D\+I\+F\+I\+C\+A\+DO \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbolBinario_a82155da74eeeac7e52b9b0cc2f2d05f2}\label{classArbolBinario_a82155da74eeeac7e52b9b0cc2f2d05f2}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Insertar\+\_\+\+Hi@{Insertar\+\_\+\+Hi}}
+\index{Insertar\+\_\+\+Hi@{Insertar\+\_\+\+Hi}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Insertar\+\_\+\+Hi()}{Insertar\_Hi()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classArbolBinario}{Arbol\+Binario}$<$T$>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo} \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Insertar\+\_\+\+Hi (\begin{DoxyParamCaption}\item[{typename \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo}}]{n,  }\item[{const T \&}]{e }\end{DoxyParamCaption})}
+
+
+
+Inserta un subarbol como hijo izquierdo del nodo. Este suabarbol solamente tiene un nodo. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & posicion del nodo donde insertar el subarbol como hijo izquierdo \\
+\hline
+{\em e} & etiqueta de la raiz del subarbol que se inserta \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbolBinario_aa917f4b80d735b3494e1793de9457fb4}\label{classArbolBinario_aa917f4b80d735b3494e1793de9457fb4}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Insertar\+\_\+\+Hi@{Insertar\+\_\+\+Hi}}
+\index{Insertar\+\_\+\+Hi@{Insertar\+\_\+\+Hi}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Insertar\+\_\+\+Hi()}{Insertar\_Hi()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classArbolBinario}{Arbol\+Binario}$<$T$>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo} \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Insertar\+\_\+\+Hi (\begin{DoxyParamCaption}\item[{typename \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo}}]{n,  }\item[{\hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$ \&}]{tree }\end{DoxyParamCaption})}
+
+
+
+Inserta un subarbol como hijo izquierdo del nodo. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & posicion del nodo donde insertar el subarbol como hijo izquierdo \\
+\hline
+{\em tree\+:subarbol} & que se inserta. ES M\+O\+D\+I\+F\+I\+C\+A\+DO \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbolBinario_a8f4971f20eb2a059b9b1ae117e7fe912}\label{classArbolBinario_a8f4971f20eb2a059b9b1ae117e7fe912}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Insertar\+Hijo\+Derecha@{Insertar\+Hijo\+Derecha}}
+\index{Insertar\+Hijo\+Derecha@{Insertar\+Hijo\+Derecha}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Insertar\+Hijo\+Derecha()}{InsertarHijoDerecha()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Insertar\+Hijo\+Derecha (\begin{DoxyParamCaption}\item[{\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$}]{n,  }\item[{\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$}]{sub }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+. Inserta un subarbol como hijo a la derecha de uno dado 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & subarbol al que se le inserta un nuevo subarbol como hijo a la derecha. \\
+\hline
+{\em sub} & raiz del subarbol que se inserta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+el subarbol hijo a la derecha de n es eliminado 
+\end{DoxyNote}
+\mbox{\Hypertarget{classArbolBinario_ad625a7ef38fa30f0420b101e1655b4aa}\label{classArbolBinario_ad625a7ef38fa30f0420b101e1655b4aa}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Insertar\+Hijo\+Derecha@{Insertar\+Hijo\+Derecha}}
+\index{Insertar\+Hijo\+Derecha@{Insertar\+Hijo\+Derecha}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Insertar\+Hijo\+Derecha()}{InsertarHijoDerecha()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Insertar\+Hijo\+Derecha (\begin{DoxyParamCaption}\item[{\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$}]{n,  }\item[{const T \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+. Inserta un subarbol como hijo a la derecha de uno dado que consta de un solo nodo 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & subarbol al que se le inserta un nuevo subarbol como hijo a la derecha. \\
+\hline
+{\em e} & etiqueta de la raiz del subarbol que se inserta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+el subarbol hijo a la derecha de n es eliminado 
+\end{DoxyNote}
+\mbox{\Hypertarget{classArbolBinario_aca7d7c365ead3aa2040ffc64e1dfb1f4}\label{classArbolBinario_aca7d7c365ead3aa2040ffc64e1dfb1f4}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Insertar\+Hijo\+Izquierda@{Insertar\+Hijo\+Izquierda}}
+\index{Insertar\+Hijo\+Izquierda@{Insertar\+Hijo\+Izquierda}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Insertar\+Hijo\+Izquierda()}{InsertarHijoIzquierda()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Insertar\+Hijo\+Izquierda (\begin{DoxyParamCaption}\item[{\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$}]{n,  }\item[{\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$}]{sub }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+. Inserta un subarbol como hijo a la izquierda de uno dado 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & subarbol al que se le inserta un nuevo subarbol como hijo a la izquierda. \\
+\hline
+{\em sub} & raiz del subarbol que se inserta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+el subarbol hijo a la izquierda de n es eliminado 
+\end{DoxyNote}
+\mbox{\Hypertarget{classArbolBinario_a87341ffccfe5ef304783c70adf86238d}\label{classArbolBinario_a87341ffccfe5ef304783c70adf86238d}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Insertar\+Hijo\+Izquierda@{Insertar\+Hijo\+Izquierda}}
+\index{Insertar\+Hijo\+Izquierda@{Insertar\+Hijo\+Izquierda}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Insertar\+Hijo\+Izquierda()}{InsertarHijoIzquierda()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Insertar\+Hijo\+Izquierda (\begin{DoxyParamCaption}\item[{\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$}]{n,  }\item[{const T \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+. Inserta un subarbol como hijo a la izquierda de uno dado que consta de un solo nodo 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & subarbol al que se le inserta un nuevo subarbol como hijo a la izquierda. \\
+\hline
+{\em e} & etiqueta de la raiz del subarbol que se inserta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+el subarbol hijo a la izquierda de n es eliminado 
+\end{DoxyNote}
+\mbox{\Hypertarget{classArbolBinario_a4bc2c798ca826b372308d4c26e0ff4cb}\label{classArbolBinario_a4bc2c798ca826b372308d4c26e0ff4cb}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Lee@{Lee}}
+\index{Lee@{Lee}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Lee()}{Lee()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Lee (\begin{DoxyParamCaption}\item[{istream \&}]{is,  }\item[{\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$\&}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lee un subarbol del flujo. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em is} & flujo de entrada. \\
+\hline
+{\em n} & subarbol que se lee. ES M\+O\+D\+I\+F\+I\+C\+A\+DO \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+si no existe el nodo aparece una x si existe una n 
+\end{DoxyNote}
+\mbox{\Hypertarget{classArbolBinario_abd35b63011c7bc50852ab039ea8500f0}\label{classArbolBinario_abd35b63011c7bc50852ab039ea8500f0}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!numero\+\_\+nodos@{numero\+\_\+nodos}}
+\index{numero\+\_\+nodos@{numero\+\_\+nodos}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{numero\+\_\+nodos()}{numero\_nodos()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+unsigned int \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::numero\+\_\+nodos (\begin{DoxyParamCaption}\item[{const \hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$}]{d }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Devuelve el numero de nodos del subarbol. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em d} & raiz del subarbol \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbolBinario_ac773f91e274ab6ec695492e5dfea4fff}\label{classArbolBinario_ac773f91e274ab6ec695492e5dfea4fff}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$ \&}]{a }\end{DoxyParamCaption}) const}
+
+
+
+Desigualdad entre dos arboles. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em a} & arbo binario con el que se compara \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true si los dos arboles son distintos false en caso contrario 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classArbolBinario_a3817bd260b6cb4687eef91928d94be17}\label{classArbolBinario_a3817bd260b6cb4687eef91928d94be17}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!operator=@{operator=}}
+\index{operator=@{operator=}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classArbolBinario}{Arbol\+Binario}$<$T$>$\& \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$ \&}]{ab }\end{DoxyParamCaption})}
+
+
+
+Operador de asignacion. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ab} & arbol binario del que se copia \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbolBinario_a238f5acc35279cca386b0b68ae20de42}\label{classArbolBinario_a238f5acc35279cca386b0b68ae20de42}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!operator==@{operator==}}
+\index{operator==@{operator==}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$ \&}]{a }\end{DoxyParamCaption}) const}
+
+
+
+Igualdad entre dos arboles. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em a} & arbo binario con el que se compara \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true si los dos arboles son iguales false en caso contrario 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classArbolBinario_ae48b89acb45fc83cc67ca8e78e31f903}\label{classArbolBinario_ae48b89acb45fc83cc67ca8e78e31f903}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Podar\+Hi\+\_\+\+Get\+Subtree@{Podar\+Hi\+\_\+\+Get\+Subtree}}
+\index{Podar\+Hi\+\_\+\+Get\+Subtree@{Podar\+Hi\+\_\+\+Get\+Subtree}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Podar\+Hi\+\_\+\+Get\+Subtree()}{PodarHi\_GetSubtree()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classArbolBinario}{Arbol\+Binario}$<$T$>$ \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Podar\+Hi\+\_\+\+Get\+Subtree (\begin{DoxyParamCaption}\item[{typename \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Poda el hijo derecho o izquierda del nodo del nodo dado \+: posicion del nodo. 
+
+\begin{DoxyReturn}{Devuelve}
+un arbol nuevo con esta rama eliminada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classArbolBinario_a4cb0bca4695c076648c41e968e7dae48}\label{classArbolBinario_a4cb0bca4695c076648c41e968e7dae48}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Podar\+Hijo\+Der\+\_\+\+Get\+Subtree@{Podar\+Hijo\+Der\+\_\+\+Get\+Subtree}}
+\index{Podar\+Hijo\+Der\+\_\+\+Get\+Subtree@{Podar\+Hijo\+Der\+\_\+\+Get\+Subtree}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Podar\+Hijo\+Der\+\_\+\+Get\+Subtree()}{PodarHijoDer\_GetSubtree()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo}$\ast$ \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Podar\+Hijo\+Der\+\_\+\+Get\+Subtree (\begin{DoxyParamCaption}\item[{\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Elimina el hijo a la derecha del subarbol sin borrarlo. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & subarbol al que se le poda el hijo a la derecha. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\+: el subarbol hijo a la derecha 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classArbolBinario_afe7738999aed926e580faf68078bbe46}\label{classArbolBinario_afe7738999aed926e580faf68078bbe46}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Podar\+Hijo\+Derecha@{Podar\+Hijo\+Derecha}}
+\index{Podar\+Hijo\+Derecha@{Podar\+Hijo\+Derecha}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Podar\+Hijo\+Derecha()}{PodarHijoDerecha()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Podar\+Hijo\+Derecha (\begin{DoxyParamCaption}\item[{\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Elimina el hijo a la derecha del subarbol dado. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & subarbol al que se le poda el hijo a la derecha. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+\+: el hijo a la derecha es puesto a nulo tras la ejecucion 
+\end{DoxyNote}
+\mbox{\Hypertarget{classArbolBinario_a307e743bfe1264ff6cba2d484f0eb578}\label{classArbolBinario_a307e743bfe1264ff6cba2d484f0eb578}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Podar\+Hijo\+Izq\+\_\+\+Get\+Subtree@{Podar\+Hijo\+Izq\+\_\+\+Get\+Subtree}}
+\index{Podar\+Hijo\+Izq\+\_\+\+Get\+Subtree@{Podar\+Hijo\+Izq\+\_\+\+Get\+Subtree}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Podar\+Hijo\+Izq\+\_\+\+Get\+Subtree()}{PodarHijoIzq\_GetSubtree()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo}$\ast$ \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Podar\+Hijo\+Izq\+\_\+\+Get\+Subtree (\begin{DoxyParamCaption}\item[{\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Elimina el hijo a la izquierda del subarbol sin borrarlo. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & subarbol al que se le poda el hijo a la derecha. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\+: el subarbol hijo a la izquierda 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classArbolBinario_a289083bf048ca95e482264ccf0ce4f42}\label{classArbolBinario_a289083bf048ca95e482264ccf0ce4f42}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Podar\+Hijo\+Izquierda@{Podar\+Hijo\+Izquierda}}
+\index{Podar\+Hijo\+Izquierda@{Podar\+Hijo\+Izquierda}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Podar\+Hijo\+Izquierda()}{PodarHijoIzquierda()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Podar\+Hijo\+Izquierda (\begin{DoxyParamCaption}\item[{\hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Elimina el hijo a la izquierda del subarbol dado. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & subarbol al que se le poda el hijo a la izquierda. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+\+: el hijo a la izquierda es puesto a nulo tras la ejecucion 
+\end{DoxyNote}
+\mbox{\Hypertarget{classArbolBinario_a072dec8f8e0f43d3e4ec295702a287ec}\label{classArbolBinario_a072dec8f8e0f43d3e4ec295702a287ec}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Recorrido\+Inorden@{Recorrido\+Inorden}}
+\index{Recorrido\+Inorden@{Recorrido\+Inorden}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Recorrido\+Inorden()}{RecorridoInorden()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Recorrido\+Inorden (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$}]{n }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Obtiene en un flujo de salida el recorrido inorden del subarbol. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em os} & flujo de salida.\+ES M\+O\+D\+I\+F\+I\+C\+A\+DO \\
+\hline
+{\em n} & subarbol sobre el que se obtiene el recorrido en inorden \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbolBinario_a717119bc343e038c8af7c00423c9b103}\label{classArbolBinario_a717119bc343e038c8af7c00423c9b103}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Recorrido\+In\+Orden@{Recorrido\+In\+Orden}}
+\index{Recorrido\+In\+Orden@{Recorrido\+In\+Orden}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Recorrido\+In\+Orden()}{RecorridoInOrden()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Recorrido\+In\+Orden (\begin{DoxyParamCaption}\item[{ostream \&}]{os }\end{DoxyParamCaption}) const}
+
+
+
+Recorrido en Inorden. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em os} & flujo sobre el que se da el recorrido del arbol en Inorden \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbolBinario_a4030c86c360d2b07538ed03680d3fb89}\label{classArbolBinario_a4030c86c360d2b07538ed03680d3fb89}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Recorrido\+Niveles@{Recorrido\+Niveles}}
+\index{Recorrido\+Niveles@{Recorrido\+Niveles}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Recorrido\+Niveles()}{RecorridoNiveles()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Recorrido\+Niveles (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$}]{n }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Escribe en un flujo de salida del subarbol por niveles. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em os} & flujo de salida. ES M\+O\+D\+I\+F\+I\+C\+A\+DO \\
+\hline
+{\em n} & subarbol sobre el que se obtiene el recorrido por niveles \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+\+: si un nodo es nulo se pone \+\_\+ 
+\end{DoxyNote}
+\mbox{\Hypertarget{classArbolBinario_af1617842b59246c0bbb6e2a81b7638b6}\label{classArbolBinario_af1617842b59246c0bbb6e2a81b7638b6}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Recorrido\+Niveles@{Recorrido\+Niveles}}
+\index{Recorrido\+Niveles@{Recorrido\+Niveles}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Recorrido\+Niveles()}{RecorridoNiveles()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Recorrido\+Niveles (\begin{DoxyParamCaption}\item[{ostream \&}]{os }\end{DoxyParamCaption}) const}
+
+
+
+Recorrido por niveles. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em os} & flujo sobre el que se da el recorrido del arbol por niveles \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbolBinario_a84f79da821dfe396411e9a3145222199}\label{classArbolBinario_a84f79da821dfe396411e9a3145222199}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Recorrido\+Postorden@{Recorrido\+Postorden}}
+\index{Recorrido\+Postorden@{Recorrido\+Postorden}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Recorrido\+Postorden()}{RecorridoPostorden()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Recorrido\+Postorden (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$}]{n }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Obtiene en un flujo de salida el recorrido Post\+Orden del subarbol. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em os} & flujo de salida.\+ES M\+O\+D\+I\+F\+I\+C\+A\+DO \\
+\hline
+{\em n} & subarbol sobre el que se obtiene el recorrido en postorden \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbolBinario_aa8380fa17126e49693942ddeadf3adc5}\label{classArbolBinario_aa8380fa17126e49693942ddeadf3adc5}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Recorrido\+Post\+Orden@{Recorrido\+Post\+Orden}}
+\index{Recorrido\+Post\+Orden@{Recorrido\+Post\+Orden}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Recorrido\+Post\+Orden()}{RecorridoPostOrden()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Recorrido\+Post\+Orden (\begin{DoxyParamCaption}\item[{ostream \&}]{os }\end{DoxyParamCaption}) const}
+
+
+
+Recorrido en Postorden. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em os} & flujo sobre el que se da el recorrido del arbol en Postorden \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbolBinario_a1a7dd97d706bfcf3c60a4cca1352f79c}\label{classArbolBinario_a1a7dd97d706bfcf3c60a4cca1352f79c}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Recorrido\+Preorden@{Recorrido\+Preorden}}
+\index{Recorrido\+Preorden@{Recorrido\+Preorden}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Recorrido\+Preorden()}{RecorridoPreorden()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Recorrido\+Preorden (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \hyperlink{structArbolBinario_1_1info__nodo}{info\+\_\+nodo} $\ast$}]{n }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Obtiene en un flujo de salida el recorrido Preorden del subarbol. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em os} & flujo de salida.\+ES M\+O\+D\+I\+F\+I\+C\+A\+DO \\
+\hline
+{\em n} & subarbol sobre el que se obtiene el recorrido en preorden \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbolBinario_af8cd1ed84675bcb2075ba1a502d8ee39}\label{classArbolBinario_af8cd1ed84675bcb2075ba1a502d8ee39}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Recorrido\+Pre\+Orden@{Recorrido\+Pre\+Orden}}
+\index{Recorrido\+Pre\+Orden@{Recorrido\+Pre\+Orden}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Recorrido\+Pre\+Orden()}{RecorridoPreOrden()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Recorrido\+Pre\+Orden (\begin{DoxyParamCaption}\item[{ostream \&}]{os }\end{DoxyParamCaption}) const}
+
+
+
+Recorrido en Preorden. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em os} & flujo sobre el que se da el recorrido del arbol en preorden \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbolBinario_a3df34c7cbcbaa42b68884e5fcde93334}\label{classArbolBinario_a3df34c7cbcbaa42b68884e5fcde93334}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!size@{size}}
+\index{size@{size}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+unsigned int \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Tamaño de un arbol. 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve el numero de nodos que tiene el arbol 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classArbolBinario_a9afe576ade74a09a9b19fb0874749cdb}\label{classArbolBinario_a9afe576ade74a09a9b19fb0874749cdb}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!Sustituye\+\_\+\+Subarbol@{Sustituye\+\_\+\+Subarbol}}
+\index{Sustituye\+\_\+\+Subarbol@{Sustituye\+\_\+\+Subarbol}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{Sustituye\+\_\+\+Subarbol()}{Sustituye\_Subarbol()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::Sustituye\+\_\+\+Subarbol (\begin{DoxyParamCaption}\item[{typename \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo}}]{pos\+\_\+this,  }\item[{const \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$ \&}]{a,  }\item[{typename \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ T $>$\+::\hyperlink{classArbolBinario_1_1nodo}{nodo}}]{pos\+\_\+a }\end{DoxyParamCaption})}
+
+
+
+Se sustituye el subarbol por otro subarbol de otro arbol. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pos\+\_\+this} & posicion de la raiz del subarbol a ser copiado. El que hubiese previo se elimina. \\
+\hline
+{\em a} & arbol fuente. \\
+\hline
+{\em pos\+\_\+a} & posicion de la raiz del suarbol de {\itshape a} que va a ser copiado. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones relacionadas y clases amigas}
+\mbox{\Hypertarget{classArbolBinario_a58c82e89a546bd6f38ad116466eabcb8}\label{classArbolBinario_a58c82e89a546bd6f38ad116466eabcb8}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+template$<$class U $>$ \\
+ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ U $>$ \&}]{ab }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Escritura de un arbol binario. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em os} & flujo de salida \\
+\hline
+{\em ab} & arbol binario que se escribe \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArbolBinario_a917493bedd4f7e4430d3283f367ce599}\label{classArbolBinario_a917493bedd4f7e4430d3283f367ce599}} 
+\index{Arbol\+Binario@{Arbol\+Binario}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Arbol\+Binario@{Arbol\+Binario}}
+\subsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+template$<$class U $>$ \\
+istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{is,  }\item[{\hyperlink{classArbolBinario}{Arbol\+Binario}$<$ U $>$ \&}]{ab }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Lectura de un arbol binario. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em os} & flujo de entrada \\
+\hline
+{\em ab} & arbol binario sobre el que se lee \\
+\hline
+\end{DoxyParams}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+include/arbolbinario.\+h\end{DoxyCompactItemize}

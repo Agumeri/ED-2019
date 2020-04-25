@@ -1,0 +1,224 @@
+\hypertarget{classinstrucciones}{}\section{Referencia de la Clase instrucciones}
+\label{classinstrucciones}\index{instrucciones@{instrucciones}}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classinstrucciones_a99948e5f47de8b6f381ce6dc41117491}{instrucciones} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de un nuevo objeto de la clase instrucciones. \end{DoxyCompactList}\item 
+\hyperlink{classinstrucciones_aab99f88e640abf3f66717a45d7f4dc33}{instrucciones} (const \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ string $>$ \&otro, const \hyperlink{classacciones}{acciones} \&accion)
+\begin{DoxyCompactList}\small\item\em Constructor por parametros de un nuevo objeto de la clase instrucciones. \end{DoxyCompactList}\item 
+\hyperlink{classinstrucciones_a2da9218bb77463a550bfb25bc1eeb89c}{instrucciones} (const \hyperlink{classinstrucciones}{instrucciones} \&otras)
+\begin{DoxyCompactList}\small\item\em Constructor por copia de un nuevo objeto de la clase instrucciones. \end{DoxyCompactList}\item 
+\hyperlink{classinstrucciones_ae4edada50c41e03502a09052b41a8c71}{$\sim$instrucciones} ()
+\begin{DoxyCompactList}\small\item\em Destructor de un objeto de la clase instrucciones. \end{DoxyCompactList}\item 
+pair$<$ bool, char $>$ \hyperlink{classinstrucciones_ad5bd317fefb8e3b92016fda362206f2f}{es\+Accion} (const string \&accion)
+\begin{DoxyCompactList}\small\item\em Metodo que indica cuando un string es una accion. \end{DoxyCompactList}\item 
+void \hyperlink{classinstrucciones_a203c471e9106613471a7a085c4badd47}{aniadir\+\_\+acciones} (\hyperlink{classacciones}{acciones} fichero\+\_\+acciones)
+\begin{DoxyCompactList}\small\item\em Metodo para asignarle un valor al atributo acc del objeto instrucciones. \end{DoxyCompactList}\item 
+\hyperlink{classArbolBinario}{Arbol\+Binario}$<$ string $>$ \hyperlink{classinstrucciones_a9d538294d3c24242b6fa6b6bcece4896}{get\+Arbol} ()
+\begin{DoxyCompactList}\small\item\em Metodo get del objeto instrucciones. \end{DoxyCompactList}\item 
+void \hyperlink{classinstrucciones_a06dafbbba27a1bc71f67451d5b183b85}{calcular\+Instrucciones\+Fusion} (\hyperlink{classinstrucciones}{instrucciones} i1, \hyperlink{classinstrucciones}{instrucciones} i2)
+\begin{DoxyCompactList}\small\item\em Metodo encargado de obtener el \hyperlink{classArbolBinario}{Arbol\+Binario$<$string$>$} de la fusion de dos recetas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classinstrucciones_a9d1cb99b5b4b9e11f4a6f1be30a324e5}\label{classinstrucciones_a9d1cb99b5b4b9e11f4a6f1be30a324e5}} 
+\hyperlink{classArbolBinario}{Arbol\+Binario}$<$ string $>$ {\bfseries datos}
+\item 
+\mbox{\Hypertarget{classinstrucciones_ad0bf4d2b4bed18fcb7bfa9ec92d7b651}\label{classinstrucciones_ad0bf4d2b4bed18fcb7bfa9ec92d7b651}} 
+\hyperlink{classacciones}{acciones} {\bfseries acc}
+\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classinstrucciones_a18db657893cefcd60d7b79becb90a1c5}{operator$<$$<$} (ostream \&os, \hyperlink{classinstrucciones}{instrucciones} inst)
+\begin{DoxyCompactList}\small\item\em Metodo de sobrecarga del flujo de salida. \end{DoxyCompactList}\item 
+istream \& \hyperlink{classinstrucciones_a0f29981464115f829915ff9f43275477}{operator$>$$>$} (istream \&is, \hyperlink{classinstrucciones}{instrucciones} \&inst)
+\begin{DoxyCompactList}\small\item\em Metodo de sobrecarga del flujo de entrada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classinstrucciones_a99948e5f47de8b6f381ce6dc41117491}\label{classinstrucciones_a99948e5f47de8b6f381ce6dc41117491}} 
+\index{instrucciones@{instrucciones}!instrucciones@{instrucciones}}
+\index{instrucciones@{instrucciones}!instrucciones@{instrucciones}}
+\subsubsection{\texorpdfstring{instrucciones()}{instrucciones()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily instrucciones\+::instrucciones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto de un nuevo objeto de la clase instrucciones. 
+
+\begin{DoxyReturn}{Devuelve}
+crea un objeto por defecto de la clase instrucciones 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinstrucciones_aab99f88e640abf3f66717a45d7f4dc33}\label{classinstrucciones_aab99f88e640abf3f66717a45d7f4dc33}} 
+\index{instrucciones@{instrucciones}!instrucciones@{instrucciones}}
+\index{instrucciones@{instrucciones}!instrucciones@{instrucciones}}
+\subsubsection{\texorpdfstring{instrucciones()}{instrucciones()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily instrucciones\+::instrucciones (\begin{DoxyParamCaption}\item[{const \hyperlink{classArbolBinario}{Arbol\+Binario}$<$ string $>$ \&}]{otro,  }\item[{const \hyperlink{classacciones}{acciones} \&}]{accion }\end{DoxyParamCaption})}
+
+
+
+Constructor por parametros de un nuevo objeto de la clase instrucciones. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em otro} & \hyperlink{classArbolBinario}{Arbol\+Binario$<$string$>$} \\
+\hline
+{\em accion} & objeto acciones \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+crea un objeto cuyo atributo datos va a tener el valro de otro, y el atributo acc tendrá el valor de accion 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinstrucciones_a2da9218bb77463a550bfb25bc1eeb89c}\label{classinstrucciones_a2da9218bb77463a550bfb25bc1eeb89c}} 
+\index{instrucciones@{instrucciones}!instrucciones@{instrucciones}}
+\index{instrucciones@{instrucciones}!instrucciones@{instrucciones}}
+\subsubsection{\texorpdfstring{instrucciones()}{instrucciones()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily instrucciones\+::instrucciones (\begin{DoxyParamCaption}\item[{const \hyperlink{classinstrucciones}{instrucciones} \&}]{otras }\end{DoxyParamCaption})}
+
+
+
+Constructor por copia de un nuevo objeto de la clase instrucciones. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em otras} & objeto instrucciones \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+crea un objeto cuyos atributos serán los del objeto instrucciones otras 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinstrucciones_ae4edada50c41e03502a09052b41a8c71}\label{classinstrucciones_ae4edada50c41e03502a09052b41a8c71}} 
+\index{instrucciones@{instrucciones}!````~instrucciones@{$\sim$instrucciones}}
+\index{````~instrucciones@{$\sim$instrucciones}!instrucciones@{instrucciones}}
+\subsubsection{\texorpdfstring{$\sim$instrucciones()}{~instrucciones()}}
+{\footnotesize\ttfamily instrucciones\+::$\sim$instrucciones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor de un objeto de la clase instrucciones. 
+
+\begin{DoxyReturn}{Devuelve}
+pone el objeto instrucciones a su estado inicial por defecto 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classinstrucciones_a203c471e9106613471a7a085c4badd47}\label{classinstrucciones_a203c471e9106613471a7a085c4badd47}} 
+\index{instrucciones@{instrucciones}!aniadir\+\_\+acciones@{aniadir\+\_\+acciones}}
+\index{aniadir\+\_\+acciones@{aniadir\+\_\+acciones}!instrucciones@{instrucciones}}
+\subsubsection{\texorpdfstring{aniadir\+\_\+acciones()}{aniadir\_acciones()}}
+{\footnotesize\ttfamily void instrucciones\+::aniadir\+\_\+acciones (\begin{DoxyParamCaption}\item[{\hyperlink{classacciones}{acciones}}]{fichero\+\_\+acciones }\end{DoxyParamCaption})}
+
+
+
+Metodo para asignarle un valor al atributo acc del objeto instrucciones. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em fichero\+\_\+acciones} & acciones \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+el valor del atributo acc del objeto que llama a este metodo será el de las acciones contenidas en el objeto acciones fichero\+\_\+acciones 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinstrucciones_a06dafbbba27a1bc71f67451d5b183b85}\label{classinstrucciones_a06dafbbba27a1bc71f67451d5b183b85}} 
+\index{instrucciones@{instrucciones}!calcular\+Instrucciones\+Fusion@{calcular\+Instrucciones\+Fusion}}
+\index{calcular\+Instrucciones\+Fusion@{calcular\+Instrucciones\+Fusion}!instrucciones@{instrucciones}}
+\subsubsection{\texorpdfstring{calcular\+Instrucciones\+Fusion()}{calcularInstruccionesFusion()}}
+{\footnotesize\ttfamily void instrucciones\+::calcular\+Instrucciones\+Fusion (\begin{DoxyParamCaption}\item[{\hyperlink{classinstrucciones}{instrucciones}}]{i1,  }\item[{\hyperlink{classinstrucciones}{instrucciones}}]{i2 }\end{DoxyParamCaption})}
+
+
+
+Metodo encargado de obtener el \hyperlink{classArbolBinario}{Arbol\+Binario$<$string$>$} de la fusion de dos recetas. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em i1} & primer objeto instrucciones de la fusion \\
+\hline
+{\em i2} & segundo objeto instrucciones de la fusion \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+El atributo datos del objeto instrucciones que llama a este metodo será aquel cuya raiz sea \char`\"{}\+Acompañar\char`\"{}, la rama izquierda será el correspondiente al atributo datos del objeto instrucciones i1 y la rama derecha será el correspondiente al atributo datos del objeto instrucciones i2 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinstrucciones_ad5bd317fefb8e3b92016fda362206f2f}\label{classinstrucciones_ad5bd317fefb8e3b92016fda362206f2f}} 
+\index{instrucciones@{instrucciones}!es\+Accion@{es\+Accion}}
+\index{es\+Accion@{es\+Accion}!instrucciones@{instrucciones}}
+\subsubsection{\texorpdfstring{es\+Accion()}{esAccion()}}
+{\footnotesize\ttfamily pair$<$bool,char$>$ instrucciones\+::es\+Accion (\begin{DoxyParamCaption}\item[{const string \&}]{accion }\end{DoxyParamCaption})}
+
+
+
+Metodo que indica cuando un string es una accion. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em accion} & string que se va a utilizar para comparar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+pair$<$bool,char$>$ cuyo bool será true si la accion de nombre accion existe y false si no es asi. El char contendrá la ariedad de la accion si esta existe, si no su valor será \textquotesingle{} \textquotesingle{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinstrucciones_a9d538294d3c24242b6fa6b6bcece4896}\label{classinstrucciones_a9d538294d3c24242b6fa6b6bcece4896}} 
+\index{instrucciones@{instrucciones}!get\+Arbol@{get\+Arbol}}
+\index{get\+Arbol@{get\+Arbol}!instrucciones@{instrucciones}}
+\subsubsection{\texorpdfstring{get\+Arbol()}{getArbol()}}
+{\footnotesize\ttfamily \hyperlink{classArbolBinario}{Arbol\+Binario}$<$string$>$ instrucciones\+::get\+Arbol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metodo get del objeto instrucciones. 
+
+\begin{DoxyReturn}{Devuelve}
+\hyperlink{classArbolBinario}{Arbol\+Binario$<$string$>$} 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de las funciones relacionadas y clases amigas}
+\mbox{\Hypertarget{classinstrucciones_a18db657893cefcd60d7b79becb90a1c5}\label{classinstrucciones_a18db657893cefcd60d7b79becb90a1c5}} 
+\index{instrucciones@{instrucciones}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!instrucciones@{instrucciones}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{\hyperlink{classinstrucciones}{instrucciones}}]{inst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Metodo de sobrecarga del flujo de salida. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em os} & ostream \\
+\hline
+{\em inst} & objeto de la clase instrucciones \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+ostream\& cuyo valor es el de las etiquetas del arbol del objeto isntrucciones inst 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinstrucciones_a0f29981464115f829915ff9f43275477}\label{classinstrucciones_a0f29981464115f829915ff9f43275477}} 
+\index{instrucciones@{instrucciones}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!instrucciones@{instrucciones}}
+\subsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{is,  }\item[{\hyperlink{classinstrucciones}{instrucciones} \&}]{inst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Metodo de sobrecarga del flujo de entrada. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em is} & istream \\
+\hline
+{\em inst} & objeto de la clase instrucciones \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+istream\& cuyo valor es el conjunto de instrucciones que se ha introducido mediante un archivo 
+\end{DoxyReturn}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+include/instrucciones.\+h\end{DoxyCompactItemize}
