@@ -1,0 +1,13 @@
+Alimento (100 gramos);Calorias (Kcal.);Hidratos de Carb.;Proteinas;Grasas;Fibra;Tipo
+Bombones Media;458;66;5;21;0;Leche-Derivados
+Berberechos Cocidos;48;0;11;0;0;Molusco
+Sardinas;135;0;19;5;0;Pescado
+Carne Cordero, Chuleta;386;0;15;36;0;Carne
+Galletas Media;436;74;7;14;5;Procesado
+Bacalao Salazon, remojado;138;0;32;1;0;Pescado
+Aceite Soja;899;0;0;100;0;Aceite
+Manhattan Cocktail;164;8;0;0;0;Bebida
+Mayonesa;718;0;2;79;0;Procesado
+Cafe Infusion;2;0;0;0;0;Bebida
+Nectarina;64;17.1;0.6;0;2;Fruta
+Chanquetes;79;2;11;3;0;Pescado

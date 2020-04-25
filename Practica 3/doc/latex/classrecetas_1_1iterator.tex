@@ -1,0 +1,189 @@
+\hypertarget{classrecetas_1_1iterator}{}\section{Referencia de la Clase recetas\+:\+:iterator}
+\label{classrecetas_1_1iterator}\index{recetas\+::iterator@{recetas\+::iterator}}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrecetas_1_1iterator_aedaa764b6ad6434a0345b2a3800ccddc}{iterator} ()
+\begin{DoxyCompactList}\small\item\em Constructor de un nuevo objeto iterator. \end{DoxyCompactList}\item 
+\hyperlink{classrecetas_1_1iterator_a88a67e3c3928c409f5e1ddf129a7f547}{iterator} (const map$<$ string, \hyperlink{classreceta}{receta} $>$\+::\hyperlink{classrecetas_1_1iterator}{iterator} \&otro)
+\begin{DoxyCompactList}\small\item\em Construct a new iterator object. \end{DoxyCompactList}\item 
+\hyperlink{classrecetas_1_1iterator_a3598837a87526535f1d7b4f06e29edc3}{iterator} (const \hyperlink{classrecetas_1_1iterator}{iterator} \&iter)
+\begin{DoxyCompactList}\small\item\em Constructor por copia de un nuevo objeto iterator. \end{DoxyCompactList}\item 
+\hyperlink{classrecetas_1_1iterator_a9789932f8c00bdb41360599cc442a920}{$\sim$iterator} ()
+\begin{DoxyCompactList}\small\item\em Destructor del objeto iterator. \end{DoxyCompactList}\item 
+bool \hyperlink{classrecetas_1_1iterator_aaf5c81706c5c44f0d6b4e9e274192c95}{operator!=} (const \hyperlink{classrecetas_1_1iterator}{iterator} otro) const
+\begin{DoxyCompactList}\small\item\em Operador de comparacion de iterator. \end{DoxyCompactList}\item 
+bool \hyperlink{classrecetas_1_1iterator_ab8e6b3561483a54ee6469be09c8ddee6}{operator==} (const \hyperlink{classrecetas_1_1iterator}{iterator} otro) const
+\begin{DoxyCompactList}\small\item\em Operador de comparacion de iterator. \end{DoxyCompactList}\item 
+\hyperlink{classrecetas_1_1iterator}{iterator} \& \hyperlink{classrecetas_1_1iterator_a46b9341b6477309554abc562b1cbbcb7}{operator++} ()
+\begin{DoxyCompactList}\small\item\em Función incrimento de iterator. \end{DoxyCompactList}\item 
+\hyperlink{classrecetas_1_1iterator}{iterator} \& \hyperlink{classrecetas_1_1iterator_acd93e50f3790178073f67b399863ca38}{operator-\/-\/} ()
+\begin{DoxyCompactList}\small\item\em Funcion decremento de iterator. \end{DoxyCompactList}\item 
+\hyperlink{classreceta}{receta} \& \hyperlink{classrecetas_1_1iterator_a106a2ead5d5049e84764e6d45dba377a}{operator$\ast$} ()
+\begin{DoxyCompactList}\small\item\em Operador de puntero. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrecetas_1_1iterator_a298a7c790e126e79e56bebd784c8b90b}\label{classrecetas_1_1iterator_a298a7c790e126e79e56bebd784c8b90b}} 
+map$<$ string, \hyperlink{classreceta}{receta} $>$\+::\hyperlink{classrecetas_1_1iterator}{iterator} {\bfseries it}
+\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrecetas_1_1iterator_a95376bf78fb9fb7122e0a6133eafbffc}\label{classrecetas_1_1iterator_a95376bf78fb9fb7122e0a6133eafbffc}} 
+class {\bfseries recetas}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classrecetas_1_1iterator_aedaa764b6ad6434a0345b2a3800ccddc}\label{classrecetas_1_1iterator_aedaa764b6ad6434a0345b2a3800ccddc}} 
+\index{recetas\+::iterator@{recetas\+::iterator}!iterator@{iterator}}
+\index{iterator@{iterator}!recetas\+::iterator@{recetas\+::iterator}}
+\subsubsection{\texorpdfstring{iterator()}{iterator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily recetas\+::iterator\+::iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de un nuevo objeto iterator. 
+
+\begin{DoxyReturn}{Devuelve}
+inicializa a 0 el valor it y a \char`\"{}\char`\"{} el valor de pos 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrecetas_1_1iterator_a88a67e3c3928c409f5e1ddf129a7f547}\label{classrecetas_1_1iterator_a88a67e3c3928c409f5e1ddf129a7f547}} 
+\index{recetas\+::iterator@{recetas\+::iterator}!iterator@{iterator}}
+\index{iterator@{iterator}!recetas\+::iterator@{recetas\+::iterator}}
+\subsubsection{\texorpdfstring{iterator()}{iterator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily recetas\+::iterator\+::iterator (\begin{DoxyParamCaption}\item[{const map$<$ string, \hyperlink{classreceta}{receta} $>$\+::\hyperlink{classrecetas_1_1iterator}{iterator} \&}]{otro }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new iterator object. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em otro} & que es una referencia a un iterador de map$<$string,receta$>$ \\
+\hline
+{\em ocad} & que es una referencia a un string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+el iterador it pasa a tener el valor de otro y pos el valor del string pos 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrecetas_1_1iterator_a3598837a87526535f1d7b4f06e29edc3}\label{classrecetas_1_1iterator_a3598837a87526535f1d7b4f06e29edc3}} 
+\index{recetas\+::iterator@{recetas\+::iterator}!iterator@{iterator}}
+\index{iterator@{iterator}!recetas\+::iterator@{recetas\+::iterator}}
+\subsubsection{\texorpdfstring{iterator()}{iterator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily recetas\+::iterator\+::iterator (\begin{DoxyParamCaption}\item[{const \hyperlink{classrecetas_1_1iterator}{iterator} \&}]{iter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor por copia de un nuevo objeto iterator. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em iter} & que es una referencia de un objeto iterator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+it obtiene el valor del it del objeto iter y pos el del pos de iter 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrecetas_1_1iterator_a9789932f8c00bdb41360599cc442a920}\label{classrecetas_1_1iterator_a9789932f8c00bdb41360599cc442a920}} 
+\index{recetas\+::iterator@{recetas\+::iterator}!````~iterator@{$\sim$iterator}}
+\index{````~iterator@{$\sim$iterator}!recetas\+::iterator@{recetas\+::iterator}}
+\subsubsection{\texorpdfstring{$\sim$iterator()}{~iterator()}}
+{\footnotesize\ttfamily recetas\+::iterator\+::$\sim$iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructor del objeto iterator. 
+
+\begin{DoxyReturn}{Devuelve}
+Se ponen todos los atributos de iterator a estado inicial (0) 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classrecetas_1_1iterator_aaf5c81706c5c44f0d6b4e9e274192c95}\label{classrecetas_1_1iterator_aaf5c81706c5c44f0d6b4e9e274192c95}} 
+\index{recetas\+::iterator@{recetas\+::iterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!recetas\+::iterator@{recetas\+::iterator}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool recetas\+::iterator\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{classrecetas_1_1iterator}{iterator}}]{otro }\end{DoxyParamCaption}) const}
+
+
+
+Operador de comparacion de iterator. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em otro} & es un objeto iterator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true si los dos objetos son distintos 
+
+false si los dos objetos tiene el mismo valor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrecetas_1_1iterator_a106a2ead5d5049e84764e6d45dba377a}\label{classrecetas_1_1iterator_a106a2ead5d5049e84764e6d45dba377a}} 
+\index{recetas\+::iterator@{recetas\+::iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!recetas\+::iterator@{recetas\+::iterator}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \hyperlink{classreceta}{receta}\& recetas\+::iterator\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Operador de puntero. 
+
+\begin{DoxyReturn}{Devuelve}
+receta asociada a una clave del map datos 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrecetas_1_1iterator_a46b9341b6477309554abc562b1cbbcb7}\label{classrecetas_1_1iterator_a46b9341b6477309554abc562b1cbbcb7}} 
+\index{recetas\+::iterator@{recetas\+::iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!recetas\+::iterator@{recetas\+::iterator}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily \hyperlink{classrecetas_1_1iterator}{iterator}\& recetas\+::iterator\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Función incrimento de iterator. 
+
+\begin{DoxyReturn}{Devuelve}
+iterator aumenta una unidad 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrecetas_1_1iterator_acd93e50f3790178073f67b399863ca38}\label{classrecetas_1_1iterator_acd93e50f3790178073f67b399863ca38}} 
+\index{recetas\+::iterator@{recetas\+::iterator}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!recetas\+::iterator@{recetas\+::iterator}}
+\subsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}}
+{\footnotesize\ttfamily \hyperlink{classrecetas_1_1iterator}{iterator}\& recetas\+::iterator\+::operator-\/-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funcion decremento de iterator. 
+
+\begin{DoxyReturn}{Devuelve}
+iterator disminuye una unidad 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrecetas_1_1iterator_ab8e6b3561483a54ee6469be09c8ddee6}\label{classrecetas_1_1iterator_ab8e6b3561483a54ee6469be09c8ddee6}} 
+\index{recetas\+::iterator@{recetas\+::iterator}!operator==@{operator==}}
+\index{operator==@{operator==}!recetas\+::iterator@{recetas\+::iterator}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool recetas\+::iterator\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classrecetas_1_1iterator}{iterator}}]{otro }\end{DoxyParamCaption}) const}
+
+
+
+Operador de comparacion de iterator. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em otro} & es un objeto iterator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true si los dos objetos tienen el mismo valor 
+
+false si los dos objetos tienen diferente valor 
+\end{DoxyReturn}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+include/recetas.\+h\end{DoxyCompactItemize}
